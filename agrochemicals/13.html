@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Freshvet - Your Trusted Partner in Sustainable Farming.">
+    <meta name="author" content="Freshvet">
+    <title>About Us - Freshvet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <!-- Logo on the Left -->
+            <div class="logo-left">
+                <a href="index.html">
+                    <img src="images/Freshvet Logo.jpg" alt="Freshvet Logo" class="logo">
+                </a>
+            </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="article-body">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/four.jpeg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            border-radius: 20px;
+            color: #fff; /* Change text color to white for contrast */
+        }
+
+        header, main, section {
+            border-radius: 20px; /* Rounded corners for sections */
+        }
+
+      /* General Styling for the Article */
+.article-body {
+    font-family: 'Arial', sans-serif;
+    color: #333333; /* Dark gray for body text */
+    line-height: 1.8;
+    padding: 30px;
+    max-width: 850px;
+    margin: 20px auto;
+    background-color: #F9F9F9; /* Light Grayish-White background */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Section Styling */
+.article-body section {
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: #FFFFFF; /* White background for each section */
+    border-radius: 12px; /* Rounded corners for sections */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Soft shadow for sections */
+    transition: background-color 0.3s, border-left 0.3s;
+}
+
+.article-body section:hover {
+    background-color: #F0F0F0;
+    border-left: 6px solid #FF8A65; /* Soft Coral border on hover */
+}
+
+/* Header Styling */
+.article-body h2 {
+    font-size: 2em;
+    color: #3F51B5; /* Indigo Blue for main headings */
+    margin-bottom: 20px;
+    text-align: center;
+    word-spacing: 0.05em; /* Consistent word spacing */
+}
+
+.article-body h3 {
+    font-size: 1.8em;
+   color: #00796B; /* Deep Teal for subheadings */
+    margin-bottom: 15px;
+    word-spacing: 0.05em;
+}
+
+.article-body h4 {
+    font-size: 1.5em;
+    color: #4CAF50; /* Lively Green for smaller headings */
+    margin-bottom: 10px;
+    word-spacing: 0.05em;
+}
+
+/* Paragraph Styling */
+.article-body p {
+    font-size: 1.15em;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.75;
+    color: #555;
+    word-spacing: 0.05em;
+}
+
+/* List Styling */
+.article-body ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.article-body ul li {
+    font-size: 1.15em;
+    margin-bottom: 12px;
+    color: #616161;
+    word-spacing: 0.05em;
+}
+
+/* Links Styling */
+.article-body a {
+    color: #00796B; /* Deep Teal for links */
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.article-body a:hover {
+    color: #FF8A65; /* Soft Coral on hover */
+    text-decoration: underline;
+}
+
+/* Section-specific Colors */
+#role-of-buffer-strips {
+    background-color: #FFF3E0; /* Soft Yellow */
+    border-left: 6px solid #FF8A65; /* Soft Coral */
+}
+
+#what-are-buffer-strips {
+    background-color: #E8F5E9; /* Soft Green */
+    border-left: 6px solid #4CAF50; /* Lively Green */
+}
+
+#how-buffer-strips-reduce-runoff {
+    background-color: #FFEBEE; /* Light Pink */
+    border-left: 6px solid #00796B; /* Deep Teal */
+}
+
+#benefits-of-buffer-strips {
+    background-color: #F1F8E9; /* Pale Green */
+    border-left: 6px solid #4CAF50; /* Lively Green */
+}
+
+#factors-affecting-effectiveness {
+    background-color: #E3F2FD; /* Soft Blue */
+    border-left: 6px solid #3F51B5; /* Indigo Blue */
+}
+
+#best-practices {
+    background-color: #E8F5E9; /* Soft Green */
+    border-left: 6px solid #4CAF50; /* Lively Green */
+}
+
+#conclusion {
+    background-color: #F9F9F9; /* Light Grayish-White */
+    border-left: 6px solid #FF8A65; /* Soft Coral */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article-body {
+        padding: 20px;
+    }
+
+    .article-body h2 {
+        font-size: 1.5em;
+    }
+
+    .article-body h3 {
+        font-size: 1.4em;
+    }
+
+    .article-body h4 {
+        font-size: 1.3em;
+    }
+
+    .article-body p {
+        font-size: 1em;
+    }
+
+    .article-body ul li {
+        font-size: 1em;
+    }
+
+    /* Ensure consistent word spacing */
+    .article-body h2, .article-body h3, .article-body h4,
+    .article-body p, .article-body ul li {
+        word-spacing: 0.05em;
+    }
+}
+
+</style>
+<section id="role-of-buffer-strips">
+    <h2>The Role of Buffer Strips in Reducing Agrochemical Runoff</h2>
+    <p>Buffer strips are vital components of modern agriculture that help reduce the harmful effects of agrochemical runoff. These strips of vegetation, typically planted between agricultural fields and nearby water bodies, serve as natural filters to intercept pollutants, such as pesticides, herbicides, and fertilizers, before they reach rivers, lakes, and streams. This not only improves water quality but also protects ecosystems from chemical contamination.</p>
+</section>
+
+<section id="what-are-buffer-strips">
+    <h2>What Are Buffer Strips?</h2>
+    <p>Buffer strips, also known as riparian buffers, are areas of vegetation—such as grasses, shrubs, and trees—planted along water bodies. These strips play a crucial role in preventing the movement of agrochemicals from farm fields into water sources. Here’s how buffer strips work:</p>
+
+    <h3>Strategic Placement</h3>
+    <ul>
+        <li>Buffer strips are typically placed between agricultural fields and water bodies like rivers, streams, and lakes.</li>
+        <li>They act as a barrier between farm runoff and water sources.</li>
+    </ul>
+
+    <h3>Vegetation Composition</h3>
+    <ul>
+        <li>The vegetation in buffer strips can vary, but they usually include grasses, shrubs, and trees.</li>
+        <li>Each type of vegetation has its own filtering abilities, making them effective in different ways.</li>
+    </ul>
+</section>
+
+<section id="how-buffer-strips-reduce-runoff">
+    <h2>How Do Buffer Strips Reduce Agrochemical Runoff?</h2>
+    <p>Buffer strips prevent agrochemical runoff through multiple mechanisms, effectively protecting water quality. Here are the key processes:</p>
+
+    <h3>Absorption of Chemicals</h3>
+    <ul>
+        <li>Plants in the buffer strip absorb and hold onto agrochemicals like fertilizers and pesticides, preventing them from reaching water sources.</li>
+        <li>The root systems of plants, especially deep-rooted species, trap chemicals in the soil.</li>
+    </ul>
+
+    <h3>Physical Filtration</h3>
+    <ul>
+        <li>The plants act as a physical barrier, filtering out soil particles, agrochemicals, and organic materials from surface runoff.</li>
+        <li>Buffer strips slow down the speed of the water as it moves, allowing more time for the chemicals to be absorbed or broken down.</li>
+    </ul>
+
+    <h3>Reduction of Sediment Runoff</h3>
+    <ul>
+        <li>Soil erosion is a common cause of agrochemical movement, but buffer strips trap soil particles, preventing them from entering waterways.</li>
+        <li>The dense vegetation helps hold the soil together, reducing sedimentation in water bodies.</li>
+    </ul>
+
+    <h3>Biological Filtration</h3>
+    <ul>
+        <li>Microorganisms in the soil and plants help break down agrochemicals, further minimizing their impact.</li>
+        <li>The biodiversity within buffer strips enhances microbial activity, aiding in the decomposition of chemicals.</li>
+    </ul>
+
+    <h3>Slowing Down Water Movement</h3>
+    <ul>
+        <li>Buffer strips reduce the speed at which surface water flows, giving the soil more time to absorb water and nutrients, and reducing runoff.</li>
+        <li>Slower water movement means less agrochemical contamination in nearby water sources.</li>
+    </ul>
+</section>
+
+<section id="benefits-of-buffer-strips">
+    <h2>Benefits of Buffer Strips in Agriculture</h2>
+    <p>Buffer strips offer several advantages for both agricultural production and environmental protection. These include:</p>
+
+    <h3>Improved Water Quality</h3>
+    <ul>
+        <li>By filtering out agrochemicals, buffer strips help keep nearby rivers, lakes, and streams clean, reducing the risk of contamination in drinking water sources.</li>
+        <li>They reduce the need for costly water treatments by maintaining better water quality.</li>
+    </ul>
+
+    <h3>Reduced Soil Erosion</h3>
+    <ul>
+        <li>Buffer strips act as a barrier against soil erosion, stabilizing the land near water bodies.</li>
+        <li>By protecting the soil from erosion, buffer strips prevent the loss of valuable topsoil, which is essential for crop growth.</li>
+    </ul>
+
+    <h3>Protection of Aquatic Ecosystems</h3>
+    <ul>
+        <li>Buffer strips provide a buffer zone for aquatic life, protecting sensitive species from harmful chemicals.</li>
+        <li>They create habitats for wildlife, helping to sustain biodiversity in agricultural landscapes.</li>
+    </ul>
+
+    <h3>Enhanced Crop Yields</h3>
+    <ul>
+        <li>Cleaner water and improved soil health contribute to better crop growth and higher yields over time.</li>
+        <li>By protecting the land from erosion and chemical contamination, buffer strips help ensure long-term agricultural productivity.</li>
+    </ul>
+
+    <h3>Cost-Effective Environmental Management</h3>
+    <ul>
+        <li>Implementing buffer strips is a relatively low-cost solution to reduce agrochemical runoff compared to more complex water management systems.</li>
+        <li>Buffer strips often qualify for government incentives, cost-sharing programs, and environmental grants, making them accessible to farmers.</li>
+    </ul>
+</section>
+
+<section id="factors-affecting-effectiveness">
+    <h2>Factors That Influence Buffer Strip Effectiveness</h2>
+    <p>Several factors affect how well buffer strips can reduce agrochemical runoff. These include:</p>
+
+    <h3>Width of the Buffer Strip</h3>
+    <ul>
+        <li>Wider buffer strips are generally more effective in intercepting runoff and trapping pollutants.</li>
+        <li>A buffer strip width of at least 10-30 meters is often recommended for optimal effectiveness.</li>
+    </ul>
+
+    <h3>Vegetation Type</h3>
+    <ul>
+        <li>The type of vegetation planted in the buffer strip significantly affects its ability to filter out agrochemicals.</li>
+        <li>Deep-rooted plants like trees and shrubs are more efficient in holding onto chemicals than grasses alone.</li>
+        <li>Diverse plant species improve the overall functionality of buffer strips by providing multiple layers of filtration.</li>
+    </ul>
+
+    <h3>Topography and Slope of Land</h3>
+    <ul>
+        <li>On flat land, buffer strips can function well, but on steeper slopes, water moves more quickly, which can reduce the effectiveness of buffer strips.</li>
+        <li>In areas with steeper slopes, farmers may need to plant wider buffer strips or combine them with other erosion control measures.</li>
+    </ul>
+
+    <h3>Water Flow and Runoff Volume</h3>
+    <ul>
+        <li>The volume of water runoff and the speed of water flow can influence the ability of buffer strips to absorb pollutants.</li>
+        <li>Areas with heavy rainfall or frequent storms may require larger or more densely vegetated buffer strips to handle the increased runoff.</li>
+    </ul>
+</section>
+
+<section id="best-practices">
+    <h2>Best Practices for Implementing Buffer Strips</h2>
+    <p>For buffer strips to be most effective, farmers should follow these best practices:</p>
+
+    <h3>Proper Placement</h3>
+    <ul>
+        <li>Place buffer strips where they will have the most impact, such as along the edges of fields near water bodies.</li>
+        <li>Ensure that the strips are wide enough to effectively filter runoff and absorb agrochemicals.</li>
+    </ul>
+
+    <h3>Planting Diverse Vegetation</h3>
+    <ul>
+        <li>Use a variety of plants, including grasses, shrubs, and trees, to maximize the buffer strip’s filtering capacity.</li>
+        <li>Deep-rooted plants should be prioritized, as they are better at absorbing chemicals and preventing soil erosion.</li>
+    </ul>
+
+    <h3>Maintenance and Care</h3>
+    <ul>
+        <li>Regularly maintain buffer strips by removing invasive species, replanting where necessary, and ensuring the vegetation remains dense.</li>
+        <li>Monitor the effectiveness of the buffer strips in reducing runoff and adjust the plantings or strip width as needed.</li>
+    </ul>
+
+    <h3>Integration with Other Best Management Practices (BMPs)</h3>
+    <ul>
+        <li>Buffer strips should be part of a broader BMP strategy, including crop rotation, reduced pesticide use, and soil conservation practices.</li>
+        <li>Consider combining buffer strips with grass waterways, wetlands, or vegetative swales to maximize environmental benefits.</li>
+    </ul>
+</section>
+
+<section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>Buffer strips are a crucial tool in reducing agrochemical runoff, protecting water quality, and promoting sustainable farming practices. By acting as natural filters, buffer strips not only safeguard aquatic ecosystems but also improve agricultural productivity by preventing soil erosion and ensuring clean water for irrigation. With proper design, placement, and maintenance, buffer strips can become an essential component of responsible farming practices that benefit both the environment and farmers in the long run.</p>
+</section>
+
+
+
+<script>
+    // Array of image paths for the products section (used as background images)
+    const productImages = [
+        'images/ham.jpg',
+        'images/35.jpeg',
+        'images/34.jpeg',
+        'images/33.jpeg',
+        'images/32.jpeg' // First image
+    ];
+
+    let productIndex = 0; // Start with the first image
+    let articleBody = document.querySelector('.article-body'); // Article body element
+
+    // Function to preload the next image
+    function preloadImage(src) {
+        const img = new Image();
+        img.src = src;
+    }
+
+    // Function to update the background image of the article body
+    function changeArticleBackground() {
+        // Preload the next image in the sequence to ensure smooth transition
+        preloadImage(productImages[(productIndex + 1) % productImages.length]);
+
+        // Change the background image with a smooth transition
+        articleBody.style.transition = 'background-image 1.5s ease-in-out'; // Ensuring the smooth transition
+        articleBody.style.backgroundImage = `url('${productImages[productIndex]}')`;
+
+        // Update the index to the next image in the array
+        productIndex = (productIndex + 1) % productImages.length; // Loop back to the first image
+    }
+
+    // Ensure the first transition happens smoothly on page load
+    window.onload = function() {
+        changeArticleBackground();
+        setInterval(changeArticleBackground, 4000); // Change background every 4 seconds
+    };
+</script>
+
+</body>
+</html>

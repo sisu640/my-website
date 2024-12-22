@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our range of effective Herbicides for healthy crops.">
+    <meta name="author" content="Freshvet">
+    <title>Herbicides - Freshvet</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/one.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            border-radius: 20px;
+        }
+
+        header, main, section {
+            border-radius: 20px;
+        }
+
+        #herbicides {
+            padding: 40px; /* Space around the content */
+            background-color: transparent; /* Transparent section background */
+            border-radius: 20px; /* Smooth edges */
+            overflow: hidden;
+            margin-bottom: 40px; /* Space below the section */
+            text-align: center; /* Center-align text */
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.8rem; /* Larger font for emphasis */
+            margin-bottom: 20px;
+            color: white; /* White color for better contrast */
+            font-weight: 700; /* Bold text for visibility */
+        }
+
+        p {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .product-box {
+            background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+            border-radius: 10px; /* Rounded edges */
+            margin: 20px auto; /* Center the box */
+            padding: 20px; /* Inner spacing */
+            max-width: 600px; /* Limit width for better readability */
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h3 {
+            font-size: 2rem; /* Larger font for the product name */
+            color: #333; /* Dark color for contrast */
+            margin-top: 15px;
+            font-weight: 600; /* Make the title stand out */
+        }
+
+        .product-description {
+            margin: 15px 0;
+            font-size: 1.1rem; /* Slightly larger font for better readability */
+            line-height: 1.8; /* Increase line spacing for comfort */
+            color: #333; /* Neutral color for text */
+        }
+
+         /* Styling for unordered lists */
+        ul {
+            margin: 20px auto;
+            padding-left: 0; /* Remove default padding */
+            list-style-type: none; /* Remove default bullet points */
+            text-align: left; /* Align text to the left */
+        }
+
+        /* Added style for Benefits section */
+        .benefits-section {
+            text-align: center; /* Center the text */
+            font-size: 1.5rem; /* Slightly larger font */
+            font-weight: bold; /* Make it bold */
+            margin: 20px 0; /* Add space around the title */
+        }
+
+        .benefits-list {
+            text-align: left;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .benefits-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+             gap: 10px;
+        }
+
+        .benefits-list li::before {
+            content: "✓";
+            color: #28a745;
+            font-size: 1.5rem;
+
+        }
+
+        .buy-button {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #218838;
+        }
+
+        .product-box:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-left">
+                <a href="index.html">
+                    <img src="images/Freshvet Logo.jpg" alt="Freshvet Logo" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="herbicides.html">Herbicides</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Herbicide Products Section -->
+    <main>
+        <section id="herbicides">
+            <h2>Our Herbicides</h2>
+            <p style="text-align: center; color: white;">Explore our high-quality herbicides designed to effectively control weeds and improve crop yield.</p>
+
+            <!-- Herbicide Product 1: Potasun Herbicide -->
+            <div class="product-box" id="herbicide-potasun">
+                <img src="images/Potasun.jpg" alt="Potasun Herbicide" class="product-image">
+                <h3>Potasun Herbicide (Selective)</h3>
+                <p class="product-description">
+                    Potasun is a selective herbicide that targets specific weeds while leaving crops unharmed, ensuring the health of your crops and controlled weed growth.
+                </p>
+
+                <!-- Benefits Section with Bolded "Benefits" -->
+                <div class="benefits-section">Benefits:</div>
+                <ul class="benefits-list">
+                    <li>Targets broadleaf and grassy weeds</li>
+                    <li>Safe for most crops when used as directed</li>
+                    <li>Enhances crop growth by reducing weed competition</li>
+                </ul>
+                <a href="contact.html" class="buy-button">Buy Now</a>
+            </div>
+
+            <!-- Herbicide Product 2: Touch Down Herbicide -->
+            <div class="product-box" id="herbicide-touchdown">
+                <img src="images/TouchDown.jpg" alt="Touch Down Herbicide" class="product-image">
+                <h3>Touch Down Herbicide (Non-Selective)</h3>
+                <p class="product-description">
+                    Touch Down is a non-selective herbicide that effectively controls all types of weeds, making it ideal for clearing unwanted vegetation in non-crop areas.
+                </p>
+
+                <!-- Benefits Section with Bolded "Benefits" -->
+                <div class="benefits-section">Benefits:</div>
+                <ul class="benefits-list">
+                    <li>Works on a wide range of weeds, both broadleaf and grassy</li>
+                    <li>Highly effective for clearing large areas or unwanted vegetation</li>
+                    <li>Can be used in non-crop areas like roadsides and industrial sites</li>
+                </ul>
+                <a href="contact.html" class="buy-button">Buy Now</a>
+            </div>
+
+        </section>
+    </main>
+<script>
+    // Array of image paths for the products section
+const productImages = [
+    'images/ham.jpg',
+    'images/35.jpeg',
+    'images/34.jpeg',
+    'images/33.jpeg',
+    'images/32.jpeg' // First image
+];
+
+let productIndex = 0; // Start with the first image
+let productBackground = document.getElementById('herbicides'); // Products section
+
+// Function to preload the next image
+function preloadImage(src) {
+    const img = new Image();
+    img.src = src;
+}
+
+// Function to update the background image of the products section
+function changeProductBackground() {
+    // Preload the next image in the sequence to ensure smooth transition
+    preloadImage(productImages[(productIndex + 1) % productImages.length]);
+
+    // Change the background image with a smooth transition
+    productBackground.style.transition = 'background-image 1.5s ease-in-out'; // Ensuring the smooth transition
+    productBackground.style.backgroundImage = `url('${productImages[productIndex]}')`;
+
+    // Update the index to the next image in the array
+    productIndex = (productIndex + 1) % productImages.length; // Loop back to the first image
+}
+
+// Ensure the first transition happens smoothly on page load
+window.onload = function() {
+    changeProductBackground();
+    setInterval(changeProductBackground, 4000);
+};
+
+    </script>
+</body>
+</html>
+
+
+
+</body>
+</html>

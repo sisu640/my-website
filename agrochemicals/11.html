@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Freshvet - Your Trusted Partner in Sustainable Farming.">
+    <meta name="author" content="Freshvet">
+    <title>About Us - Freshvet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <!-- Logo on the Left -->
+            <div class="logo-left">
+                <a href="index.html">
+                    <img src="images/Freshvet Logo.jpg" alt="Freshvet Logo" class="logo">
+                </a>
+            </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="article-body">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/four.jpeg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            border-radius: 20px;
+            color: #fff; /* Change text color to white for contrast */
+        }
+
+        header, main, section {
+            border-radius: 20px; /* Rounded corners for sections */
+        }
+
+       /* General Styling for the Article */
+.article-body {
+    font-family: 'Arial', sans-serif;
+    color: #333333; /* Dark grey for body text */
+    line-height: 1.8;
+    padding: 30px;
+    max-width: 850px;
+    margin: 20px auto;
+    background-color: #f0f9ff; /* Light Blue background */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Section Styling */
+.article-body section {
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: #ffffff; /* White background for each section */
+    border-radius: 12px; /* Rounded corners for sections */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Soft shadow for sections */
+    transition: background-color 0.3s, border-left 0.3s; /* Smooth transitions */
+}
+
+/* Header Styling */
+.article-body h2 {
+    font-size: 1.5em;
+    color: #0277bd; /* Darker Blue for major headings */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.article-body h3 {
+    font-size: 1.3em;
+    color: #e65100; /* Bright Orange for subsection headings */
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+.article-body p {
+    font-size: 1.15em;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.75;
+    color: #555;
+}
+
+/* Unordered List Styling */
+.article-body ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    background-color: #e8f5e9; /* Light Green background for lists */
+    border-radius: 8px; /* Rounded corners for list */
+    padding: 15px;
+}
+
+.article-body ul li {
+    font-size: 1.15em;
+    margin-bottom: 12px;
+    color: #388e3c; /* Dark Green color for list items */
+}
+
+/* Links Styling */
+.article-body a {
+    color: #0288d1; /* Blue for links */
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effect */
+}
+
+.article-body a:hover {
+    color: #01579b; /* Darker blue for hover */
+    text-decoration: underline;
+}
+
+/* Section Specific Colors */
+#biopesticides-future-of-sustainable-farming {
+    background-color: #e1f5fe; /* Light Blue background */
+    border-left: 6px solid #0288d1; /* Blue left border */
+}
+
+#what-are-biopesticides {
+    background-color: #e3f2fd; /* Very Light Blue background */
+    border-left: 6px solid #039be5; /* Bright Blue left border */
+}
+
+#advantages-of-biopesticides {
+    background-color: #e8f5e9; /* Light Green background */
+    border-left: 6px solid #388e3c; /* Green left border */
+}
+
+#challenges-of-biopesticides {
+    background-color: #fffde7; /* Light Yellow background */
+    border-left: 6px solid #fbc02d; /* Yellow left border */
+}
+
+#how-to-use-biopesticides-effectively {
+    background-color: #f3e5f5; /* Lavender background */
+    border-left: 6px solid #7b1fa2; /* Purple left border */
+}
+
+#examples-of-biopesticides {
+    background-color: #ede7f6; /* Soft Violet background */
+    border-left: 6px solid #5e35b1; /* Deep Violet left border */
+}
+
+#role-of-biopesticides-in-sustainable-agriculture {
+    background-color: #fce4ec; /* Light Pink background */
+    border-left: 6px solid #d81b60; /* Pink left border */
+}
+
+#future-outlook-for-biopesticides {
+    background-color: #f1f8e9; /* Light Green background */
+    border-left: 6px solid #66bb6a; /* Lime Green left border */
+}
+
+#conclusion {
+    background-color: #f5f5f5; /* Light Grey background */
+    border-left: 6px solid #0288d1; /* Blue left border */
+}
+
+/* Section Hover Effects */
+.article-body section:hover {
+    background-color: #f0f0f0;
+    border-left: 6px solid #0288d1; /* On hover, the section highlights with a blue border */
+}
+
+/* Responsive Fix for Smaller Screens */
+@media (max-width: 768px) {
+    .article-body {
+        padding: 20px;
+    }
+
+    .article-body h2 {
+        font-size: 1.3em;
+    }
+
+    .article-body h3 {
+        font-size: 1.1em;
+    }
+
+    .article-body p {
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .article-body ul {
+        padding-left: 20px;
+    }
+
+    .article-body ul li {
+        font-size: 1em;
+    }
+}
+
+
+    </style>
+<section id="biopesticides-future-of-sustainable-farming">
+    <h2>Biopesticides: The Future of Sustainable Farming</h2>
+    <p>Biopesticides represent a significant advancement in agricultural technology, offering an environmentally friendly solution to pest management. Derived from natural substances like microorganisms, plants, and minerals, biopesticides serve as a sustainable alternative to chemical pesticides. Here's an in-depth look at how biopesticides are revolutionizing farming and why they are essential for the future of agriculture.</p>
+</section>
+
+<section id="what-are-biopesticides">
+    <h2>What Are Biopesticides?</h2>
+    <p>Biopesticides are classified into three main categories:</p>
+    <h3>Microbial Biopesticides</h3>
+    <p>These are formulated using bacteria, fungi, viruses, or protozoa to target specific pests. <br> <em>Example:</em> Bacillus thuringiensis (Bt), a bacterium that produces toxins harmful to insects but safe for humans and non-target organisms.</p>
+
+    <h3>Plant-Incorporated Protectants (PIPs)</h3>
+    <p>Derived from genetic material added to crops, enabling them to produce pest-resistant traits. <br> <em>Example:</em> Genetically modified corn that produces proteins toxic to specific insects.</p>
+
+    <h3>Biochemical Biopesticides</h3>
+    <p>These mimic natural substances that control pests through mechanisms such as attracting pests to traps or disrupting their mating. <br> <em>Example:</em> Insect pheromones used in traps.</p>
+</section>
+
+<section id="advantages-of-biopesticides">
+    <h2>Advantages of Biopesticides</h2>
+    <p>Adopting biopesticides offers several benefits over traditional chemical pesticides:</p>
+
+    <h3>Environmental Safety</h3>
+    <ul>
+        <li>Minimal impact on non-target organisms like pollinators, beneficial insects, and soil microorganisms.</li>
+        <li>Lower risk of water and soil contamination.</li>
+    </ul>
+
+    <h3>Human Health Protection</h3>
+    <ul>
+        <li>Reduced exposure to toxic chemicals for farmers and consumers.</li>
+        <li>No harmful residues on crops or in food products.</li>
+    </ul>
+
+    <h3>Target-Specific Action</h3>
+    <ul>
+        <li>Biopesticides act specifically on pests, minimizing harm to beneficial species.</li>
+        <li>Prevents the development of pest resistance.</li>
+    </ul>
+
+    <h3>Improved Soil Health</h3>
+    <ul>
+        <li>Biopesticides support soil biodiversity and fertility.</li>
+    </ul>
+
+    <h3>Compatibility with Integrated Pest Management (IPM)</h3>
+    <ul>
+        <li>Can be used alongside other pest management strategies, enhancing overall effectiveness.</li>
+    </ul>
+</section>
+
+<section id="challenges-of-biopesticides">
+    <h2>Challenges of Biopesticides</h2>
+    <p>Despite their benefits, biopesticides face some challenges:</p>
+
+    <h3>Short Shelf Life</h3>
+    <p>Many biopesticides degrade quickly and require proper storage.</p>
+
+    <h3>Slower Action</h3>
+    <p>They may take longer to affect pests compared to chemical pesticides.</p>
+
+    <h3>Specificity</h3>
+    <p>While being target-specific is a benefit, it can also be a limitation if multiple pest species are present.</p>
+
+    <h3>Higher Initial Cost</h3>
+    <p>Some biopesticides may have a higher upfront cost, though this is offset by long-term savings and benefits.</p>
+</section>
+
+<section id="how-to-use-biopesticides-effectively">
+    <h2>How to Use Biopesticides Effectively</h2>
+    <p>To maximize the effectiveness of biopesticides:</p>
+
+    <h3>Understand Your Crop Needs</h3>
+    <ul>
+        <li>Conduct pest identification and determine the specific threats to your crops.</li>
+    </ul>
+
+    <h3>Integrate with Other Practices</h3>
+    <ul>
+        <li>Combine biopesticides with crop rotation, natural predators, and other IPM techniques.</li>
+    </ul>
+
+    <h3>Follow Application Guidelines</h3>
+    <ul>
+        <li>Apply during the correct growth stage of the pest to ensure maximum impact.</li>
+        <li>Avoid excessive use to maintain ecological balance.</li>
+    </ul>
+
+    <h3>Store Properly</h3>
+    <ul>
+        <li>Ensure biopesticides are stored under recommended conditions to preserve their efficacy.</li>
+    </ul>
+</section>
+
+<section id="examples-of-biopesticides">
+    <h2>Examples of Biopesticides</h2>
+    <ul>
+        <li><strong>Neem-Based Products:</strong> Neem oil disrupts pest growth and reproduction.</li>
+        <li><strong>Bt Sprays:</strong> Widely used against caterpillars and beetles.</li>
+        <li><strong>Trichoderma-Based Products:</strong> A fungus effective in controlling plant pathogens.</li>
+        <li><strong>Beauveria bassiana:</strong> A fungal biopesticide used to manage aphids, whiteflies, and other insects.</li>
+        <li><strong>Pyrethrin:</strong> Derived from chrysanthemum flowers, effective against various insect pests.</li>
+    </ul>
+</section>
+
+<section id="role-of-biopesticides-in-sustainable-agriculture">
+    <h2>Role of Biopesticides in Sustainable Agriculture</h2>
+    <p>Biopesticides align with sustainable farming practices by:</p>
+
+    <h3>Promoting Biodiversity and Ecosystem Health</h3>
+    <p>By supporting a variety of organisms, biopesticides help to preserve ecological balance in farming systems.</p>
+
+    <h3>Reducing Reliance on Synthetic Chemicals</h3>
+    <p>Biopesticides reduce the need for chemical pesticides, which can pollute water and soil and harm non-target species.</p>
+
+    <h3>Ensuring Long-Term Productivity</h3>
+    <p>Biopesticides improve soil health and crop resilience, ensuring sustained productivity over time.</p>
+
+    <h3>Supporting Organic and Eco-Friendly Certifications</h3>
+    <p>Biopesticides are compatible with organic farming practices and help in meeting eco-friendly certification standards.</p>
+</section>
+
+<section id="future-outlook-for-biopesticides">
+    <h2>Future Outlook for Biopesticides</h2>
+    <p>The global biopesticide market is expected to grow significantly due to increasing demand for sustainable agriculture. Innovations in biotechnology are enhancing the efficacy and versatility of biopesticides, making them more accessible and affordable for farmers worldwide.</p>
+
+    <h3>Market Growth and Technological Advancements</h3>
+    <p>As biotechnological innovations continue to evolve, biopesticides will become more efficient, affordable, and adaptable to various farming systems.</p>
+
+    <h3>Environmental Benefits</h3>
+    <p>Biopesticides offer a more sustainable approach to pest control, with fewer environmental risks compared to traditional chemical methods.</p>
+
+    <p>By integrating biopesticides into mainstream farming practices, we can strike a balance between productivity and environmental stewardship, paving the way for a greener, healthier future.</p>
+</section>
+
+        <section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>Slow-release fertilizers are essential for sustainable agriculture, offering steady nutrient delivery, improved plant growth, and reduced environmental impact. Their efficiency and eco-friendly benefits make them a smart choice for farming, gardening, and landscaping. Adopting these fertilizers supports higher productivity while protecting our natural resources—a vital step toward a sustainable future.</p>
+</section>
+
+
+<script>
+    // Array of image paths for the products section (used as background images)
+    const productImages = [
+        'images/ham.jpg',
+        'images/35.jpeg',
+        'images/34.jpeg',
+        'images/33.jpeg',
+        'images/32.jpeg' // First image
+    ];
+
+    let productIndex = 0; // Start with the first image
+    let articleBody = document.querySelector('.article-body'); // Article body element
+
+    // Function to preload the next image
+    function preloadImage(src) {
+        const img = new Image();
+        img.src = src;
+    }
+
+    // Function to update the background image of the article body
+    function changeArticleBackground() {
+        // Preload the next image in the sequence to ensure smooth transition
+        preloadImage(productImages[(productIndex + 1) % productImages.length]);
+
+        // Change the background image with a smooth transition
+        articleBody.style.transition = 'background-image 1.5s ease-in-out'; // Ensuring the smooth transition
+        articleBody.style.backgroundImage = `url('${productImages[productIndex]}')`;
+
+        // Update the index to the next image in the array
+        productIndex = (productIndex + 1) % productImages.length; // Loop back to the first image
+    }
+
+    // Ensure the first transition happens smoothly on page load
+    window.onload = function() {
+        changeArticleBackground();
+        setInterval(changeArticleBackground, 4000); // Change background every 4 seconds
+    };
+</script>
+
+</body>
+</html>

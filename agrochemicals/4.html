@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Freshvet - Your Trusted Partner in Sustainable Farming.">
+    <meta name="author" content="Freshvet">
+    <title>About Us - Freshvet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <!-- Logo on the Left -->
+            <div class="logo-left">
+                <a href="index.html">
+                    <img src="images/Freshvet Logo.jpg" alt="Freshvet Logo" class="logo">
+                </a>
+            </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="article-body">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/four.jpeg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            border-radius: 20px;
+            color: #fff; /* Change text color to white for contrast */
+        }
+
+        header, main, section {
+            border-radius: 20px; /* Rounded corners for sections */
+        }
+
+        .article-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50; /* Darker text for better readability */
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 800px; /* Limit width for better readability */
+    margin: 20px auto; /* Center the article with top/bottom spacing */
+    border-radius: 20px; /* Rounded corners for a modern look */
+    padding-bottom: 40px; /* Extra padding at the bottom */
+    background-color: rgba(250, 250, 250, 0.98); /* Slightly more neutral white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+}
+
+.intro-image {
+    display: block;
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+    margin: 20px auto; /* Center the image with spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+}
+
+.article-body h2 {
+    font-size: 1.8em;
+    color: #1abc9c; /* Vibrant teal for headings */
+    margin-bottom: 20px;
+    text-align: center; /* Center align the headings */
+    font-weight: 600; /* Bold for emphasis */
+    text-transform: uppercase; /* Add a professional look */
+}
+
+.article-body p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: justify; /* Ensures uniform spacing between words */
+    color: #34495e; /* Neutral gray for paragraph text */
+    line-height: 1.8; /* Better line spacing for readability */
+}
+
+.article-body ul {
+    list-style-type: disc;
+    padding-left: 40px; /* Proper spacing for list alignment */
+    margin-bottom: 20px;
+    text-align: left; /* Ensure lists are left-aligned */
+}
+
+.article-body ul li {
+    font-size: 1.1em;
+    color: #2c3e50; /* Consistent dark gray for list items */
+    margin-bottom: 10px;
+    line-height: 1.5; /* Better spacing for readability */
+}
+
+.article-body section {
+    background-color: #f4f4f8; /* Light gray with a hint of blue */
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px; /* Slightly more rounded for a modern touch */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+    border-left: 6px solid #1abc9c; /* Accent border to differentiate sections */
+}
+
+.article-body section h2 {
+    font-size: 1.6em;
+    color: #16a085; /* Consistent heading color */
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-align: center; /* Align headings to the left within sections */
+}
+
+.article-body section ul {
+    margin-top: 10px;
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+.article-body section ul li {
+    color: #34495e; /* Slightly lighter gray for consistency */
+    font-size: 1.1em;
+}
+
+.article-body ul li strong {
+    color: #1abc9c; /* Highlighted text for important terms */
+}
+        /* General Styling for the Article */
+.article-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 800px; /* Limit width for readability */
+    margin: 20px auto; /* Center the article with spacing */
+    border-radius: 16px; /* Modern rounded corners */
+    padding-bottom: 40px; /* Extra padding at the bottom */
+    background-color: rgba(250, 250, 250, 0.95); /* Subtle white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Styling for Introductory Image */
+.intro-image {
+    display: block;
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto;
+    margin: 20px auto; /* Center with spacing */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for modern look */
+}
+
+/* Heading Styles */
+.article-body h2 {
+    font-size: 1.8em;
+    color: #16a085; /* Teal color for headings */
+    margin-bottom: 20px;
+    text-align: center; /* Center the headings */
+    font-weight: 700; /* Bold for emphasis */
+}
+
+.article-body h3 {
+    font-size: 1.5em;
+    color: #27ae60; /* Slightly darker teal for subheadings */
+    margin-bottom: 15px;
+    text-align: left; /* Align subheadings to the left */
+    font-weight: 600;
+}
+
+.article-body h4 {
+    font-size: 1.3em;
+    color: #2980b9; /* Blue for smaller headings */
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Paragraph Styling */
+.article-body p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify; /* Justify text for a neat look */
+    word-spacing: normal; /* Prevent uneven spacing */
+    line-height: 1.8;
+    hyphens: auto; /* Enable word-breaking for narrow containers */
+    color: #2c3e50; /* Darker gray for readability */
+}
+
+/* Unordered List Styling */
+.article-body ul {
+    list-style-type: disc; /* Standard bullet points */
+    padding-left: 25px; /* Indentation for bullets */
+    margin-bottom: 20px;
+}
+
+.article-body ul li {
+    font-size: 1.1em;
+    color: #34495e; /* Slightly lighter gray for list items */
+    margin-bottom: 10px;
+}
+
+/* Section Styling */
+.article-body section {
+    background-color: #f7f9fa; /* Light gray background for sections */
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for sections */
+}
+
+/* Responsive Fix for Smaller Screens */
+@media (max-width: 600px) {
+    .article-body p {
+        text-align: left; /* Avoid justify alignment for smaller screens */
+        line-height: 1.6; /* Adjust line height for readability */
+        word-spacing: normal;
+    }
+
+    .article-body {
+        padding: 15px; /* Reduce padding for smaller screens */
+        margin: 10px; /* Slight margin adjustment */
+    }
+
+    .article-body h2 {
+        font-size: 1.6em; /* Smaller headings for narrow screens */
+    }
+
+    .article-body h3 {
+        font-size: 1.4em; /* Adjust subheading size */
+    }
+
+    .article-body ul {
+        padding-left: 20px; /* Adjust bullet indentation */
+    }
+
+    .article-body ul li {
+        font-size: 1em; /* Slightly smaller font size for lists */
+    }
+}
+
+
+    </style>
+
+<section id="types-of-agrochemicals">
+    <h2>Types of Agrochemicals</h2>
+    <p>Agrochemicals are essential tools in modern agriculture, helping farmers increase crop yields, protect plants from pests, and enhance soil health. These chemicals serve various purposes, and understanding each type is crucial for efficient and sustainable farming practices. Agrochemicals can be broadly classified into several categories, each addressing different needs in crop production.</p>
+</section>
+
+<section id="pesticides">
+    <h2>Pesticides</h2>
+    <p>Pesticides are chemicals designed to protect crops from pests, such as insects, fungi, and weeds. They play a crucial role in preventing crop damage and maintaining healthy plants. Pesticides include insecticides, herbicides, fungicides, and rodenticides, each targeting a specific type of pest.</p>
+
+    <h3>Types of Pesticides:</h3>
+    <h4>Insecticides (Target harmful insects):</h4>
+    <ul>
+        <li><strong>Pyrethroids:</strong> Synthetic chemicals that act on the nervous system of insects.</li>
+        <li><strong>Neonicotinoids:</strong> Affect the nerve receptors of insects, disrupting their ability to feed and reproduce.</li>
+    </ul>
+
+    <h4>Herbicides (Control weeds):</h4>
+    <ul>
+        <li><strong>Glyphosate:</strong> A non-selective herbicide that targets a wide range of weeds.</li>
+        <li><strong>2,4-D:</strong> A selective herbicide primarily used to control broadleaf weeds.</li>
+    </ul>
+
+    <h4>Fungicides (Control fungal diseases):</h4>
+    <ul>
+        <li><strong>Sulfur:</strong> A natural fungicide used to control powdery mildew, rust, and blight.</li>
+        <li><strong>Maneb:</strong> A fungicide used to control various fungal diseases in crops.</li>
+    </ul>
+
+    <h4>Rodenticides (Control rodents):</h4>
+    <ul>
+        <li><strong>Brodifacoum:</strong> A highly effective rodenticide that prevents blood clotting in rodents.</li>
+        <li><strong>Warfarin:</strong> A rodenticide that interferes with the coagulation of blood in rodents.</li>
+    </ul>
+
+    <h3>Benefits of Pesticides:</h3>
+    <ul>
+        <li>Prevent crop damage from pests, increasing yield.</li>
+        <li>Help control the spread of plant diseases.</li>
+        <li>Ensure food security by protecting crops from pests.</li>
+    </ul>
+</section>
+
+<section id="fertilizers">
+    <h2>Fertilizers</h2>
+    <p>Fertilizers are vital in providing plants with essential nutrients for growth. They come in two main categories: chemical and organic fertilizers, both of which can improve crop health and boost productivity.</p>
+
+    <h3>Types of Fertilizers:</h3>
+    <h4>Chemical Fertilizers (Manufactured and concentrated nutrients):</h4>
+    <ul>
+        <li><strong>Nitrogen Fertilizers:</strong> Stimulate plant growth by supplying nitrogen, an essential element for photosynthesis. Example: Urea.</li>
+        <li><strong>Phosphorus Fertilizers:</strong> Aid in root development and energy transfer in plants. Example: Superphosphate.</li>
+        <li><strong>Potassium Fertilizers:</strong> Enhance disease resistance and regulate water retention in plants. Example: Potassium Chloride.</li>
+    </ul>
+
+    <h4>Organic Fertilizers (Derived from organic matter):</h4>
+    <ul>
+        <li><strong>Compost:</strong> Decomposed plant material that enriches soil and provides balanced nutrients.</li>
+        <li><strong>Manure:</strong> Animal manure, such as cow or chicken manure, improves soil fertility and texture.</li>
+        <li><strong>Bone Meal:</strong> Ground animal bones that provide phosphorus for healthy root development.</li>
+    </ul>
+
+    <h3>Benefits of Fertilizers:</h3>
+    <ul>
+        <li>Provide essential nutrients for plant growth and development.</li>
+        <li>Improve soil fertility and plant health.</li>
+        <li>Enhance crop yield and productivity.</li>
+    </ul>
+</section>
+
+<section id="plant-growth-regulators">
+    <h2>Plant Growth Regulators (PGRs)</h2>
+    <p>Plant Growth Regulators (PGRs) are chemicals that influence the growth and development of plants. These hormones can encourage plant growth, regulate flowering, delay aging, or control plant size, leading to better crop yield and quality.</p>
+
+    <h3>Common Types of PGRs:</h3>
+    <ul>
+        <li><strong>Auxins:</strong> Stimulate root formation and cell elongation.</li>
+        <li><strong>Gibberellins:</strong> Promote stem elongation and fruit setting.</li>
+        <li><strong>Cytokinins:</strong> Encourage cell division and delay leaf aging.</li>
+        <li><strong>Ethylene:</strong> Regulates fruit ripening and flower opening.</li>
+    </ul>
+
+    <h3>Benefits of Plant Growth Regulators:</h3>
+    <ul>
+        <li>Improve crop yield by enhancing plant growth.</li>
+        <li>Regulate flowering and fruiting for better harvests.</li>
+        <li>Control plant size and development for optimal growth.</li>
+    </ul>
+</section>
+
+<section id="soil-conditioners">
+    <h2>Soil Conditioners</h2>
+    <p>Soil conditioners improve soil structure and water retention, creating an optimal environment for plant growth. These products help modify soil texture and support healthy root systems.</p>
+
+    <h3>Common Types of Soil Conditioners:</h3>
+    <ul>
+        <li><strong>Organic Matter:</strong> Compost and manure improve soil texture and water retention while providing essential nutrients.</li>
+        <li><strong>Gypsum:</strong> Reduces compaction in clay soils and improves water infiltration.</li>
+        <li><strong>Clay and Sand:</strong> Used to adjust soil texture, either enhancing drainage or improving moisture retention.</li>
+    </ul>
+
+    <h3>Benefits of Soil Conditioners:</h3>
+    <ul>
+        <li>Enhance soil structure for better root development.</li>
+        <li>Improve water retention and drainage in soil.</li>
+        <li>Support healthier plant growth by providing a more fertile environment.</li>
+    </ul>
+</section>
+
+<section id="adjuvants">
+    <h2>Adjuvants</h2>
+    <p>Adjuvants are substances added to agrochemical formulations, such as pesticides or fertilizers, to improve their effectiveness. They help enhance the performance of active ingredients and increase the efficiency of chemical treatments.</p>
+
+    <h3>Types of Adjuvants:</h3>
+    <ul>
+        <li><strong>Surfactants:</strong> Aid in mixing chemicals with water and ensure even distribution on plant surfaces.</li>
+        <li><strong>Stickers:</strong> Help chemicals adhere to plant surfaces and resist washing off.</li>
+        <li><strong>Penetrants:</strong> Enhance the penetration of chemicals into plant tissues for better effectiveness.</li>
+        <li><strong>Safeners:</strong> Reduce plant damage from pesticides while maintaining their pest control efficacy.</li>
+    </ul>
+
+    <h3>Benefits of Adjuvants:</h3>
+    <ul>
+        <li>Increase the coverage and efficacy of agrochemical treatments.</li>
+        <li>Reduce chemical wastage and improve treatment outcomes.</li>
+        <li>Ensure more consistent and reliable results in pest control and plant protection.</li>
+    </ul>
+</section>
+
+<section id="biopesticides">
+    <h2>Biopesticides</h2>
+    <p>Biopesticides are natural alternatives to chemical pesticides, derived from microorganisms, plants, or minerals. These offer an environmentally friendly solution for pest control, especially in organic farming.</p>
+
+    <h3>Types of Biopesticides:</h3>
+    <ul>
+        <li><strong>Microbial Pesticides:</strong> Contain beneficial microorganisms like bacteria or fungi that target specific pests. Example: Bacillus thuringiensis.</li>
+        <li><strong>Biochemical Pesticides:</strong> Natural substances like neem oil or garlic extract, which disrupt the growth of pests without harming the environment.</li>
+    </ul>
+
+    <h3>Benefits of Biopesticides:</h3>
+    <ul>
+        <li>Offer a more sustainable, eco-friendly pest control solution.</li>
+        <li>Reduce the environmental impact of traditional chemical pesticides.</li>
+        <li>Support organic farming practices with minimal chemical use.</li>
+    </ul>
+</section>
+
+<section id="growth-stimulants">
+    <h2>Growth Stimulants</h2>
+    <p>Growth stimulants are substances that help plants grow better, especially during periods of stress such as drought or nutrient deficiencies. They enhance plant metabolism and improve resilience.</p>
+
+    <h3>Types of Growth Stimulants:</h3>
+    <ul>
+        <li><strong>Seaweed Extracts:</strong> Rich in nutrients, they help plants recover from stress and promote growth.</li>
+        <li><strong>Amino Acids:</strong> Support plant metabolism and improve stress tolerance.</li>
+    </ul>
+
+    <h3>Benefits of Growth Stimulants:</h3>
+    <ul>
+        <li>Boost plant growth under challenging environmental conditions.</li>
+        <li>Improve plant resilience to stress factors like drought and nutrient deficiencies.</li>
+        <li>Enhance overall plant health and productivity.</li>
+    </ul>
+</section>
+
+<section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>Agrochemicals are indispensable tools in modern agriculture, enhancing crop yield, improving plant protection, and supporting soil health. By understanding the different types of agrochemicals and their roles, farmers can make informed decisions that benefit both their crops and the environment. However, it is crucial to use agrochemicals responsibly to prevent environmental damage and ensure sustainable farming practices.</p>
+</section>
+
+
+<script>
+    // Array of image paths for the products section (used as background images)
+    const productImages = [
+        'images/ham.jpg',
+        'images/35.jpeg',
+        'images/34.jpeg',
+        'images/33.jpeg',
+        'images/32.jpeg' // First image
+    ];
+
+    let productIndex = 0; // Start with the first image
+    let articleBody = document.querySelector('.article-body'); // Article body element
+
+    // Function to preload the next image
+    function preloadImage(src) {
+        const img = new Image();
+        img.src = src;
+    }
+
+    // Function to update the background image of the article body
+    function changeArticleBackground() {
+        // Preload the next image in the sequence to ensure smooth transition
+        preloadImage(productImages[(productIndex + 1) % productImages.length]);
+
+        // Change the background image with a smooth transition
+        articleBody.style.transition = 'background-image 1.5s ease-in-out'; // Ensuring the smooth transition
+        articleBody.style.backgroundImage = `url('${productImages[productIndex]}')`;
+
+        // Update the index to the next image in the array
+        productIndex = (productIndex + 1) % productImages.length; // Loop back to the first image
+    }
+
+    // Ensure the first transition happens smoothly on page load
+    window.onload = function() {
+        changeArticleBackground();
+        setInterval(changeArticleBackground, 4000); // Change background every 4 seconds
+    };
+</script>
+
+</body>
+</html>

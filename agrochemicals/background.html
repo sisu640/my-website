@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Slideshow</title>
+    <style>
+        /* Style the body for the slideshow */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Make sure the body fills the full screen */
+            overflow: hidden; /* Prevent scrollbars */
+            background-size: cover; /* Ensure background images cover the screen */
+            background-position: center; /* Center the background images */
+            transition: background-image 1s ease-in-out; /* Smooth transitions */
+        }
+    </style>
+</head>
+<body>
+<script>
+    // Array containing paths to the images
+    const images = [
+        'images/one.jpeg',
+        'images/two.jpeg',
+        'images/three.jpeg',
+        'images/four.jpeg',
+        'images/five.jpg'
+    ];
+
+    let currentImageIndex = 0; // Start with the first image
+
+    // Function to change the background image
+    function changeBackgroundImage() {
+        // Set the background image of the body
+        document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
+
+        // Update the index to show the next image in the array
+        currentImageIndex = (currentImageIndex + 1) % images.length; // Loop back to the first image
+    }
+
+    // Set an interval to change the image every 5 seconds (adjustable)
+    setInterval(changeBackgroundImage, 5000);
+
+    // Initialize the first background image
+    changeBackgroundImage();
+</script>
+</body>
+</html>

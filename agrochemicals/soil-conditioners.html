@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enhance your soil with Rhizovator, a high-quality soil conditioner.">
+    <meta name="author" content="Freshvet">
+    <title>Soil Conditioners - Freshvet</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General body styling */
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url('images/GH.jpg'); /* Default starting image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            border-radius: 20px;
+            transition: background-image 1.5s ease-in-out; /* Smooth transition for background image */
+        }
+
+
+        /* Style for rounded corners in the layout */
+        header, main, section {
+            border-radius: 20px; /* Rounded corners for header, main, and sections */
+        }
+
+        /* Section styling for the soil conditioner product */
+        #soil-conditioners {
+            padding: 40px; /* Space around the content */
+            background-color: transparent; /* Transparent section background */
+            border-radius: 20px; /* Smooth edges */
+            overflow: hidden;
+            margin-bottom: 40px; /* Space below the section */
+            text-align: center; /* Center-align text */
+        }
+
+        /* Main heading (Our Soil Conditioner Products) */
+        h2 {
+            text-align: center;
+            font-size: 2.8rem; /* Larger font for emphasis */
+            margin-bottom: 20px;
+            color: white; /* White color for better contrast */
+            font-weight: 700; /* Bold text for visibility */
+        }
+
+        /* Paragraph styling */
+        p {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        /* Style for the product box */
+        .product-box {
+            background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+            border-radius: 10px; /* Rounded edges */
+            margin: 20px auto; /* Center the box */
+            padding: 20px; /* Inner spacing */
+            max-width: 600px; /* Limit width for better readability */
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+        }
+
+        /* Styling for the product image */
+        .product-image {
+            width: 100%; /* Fully responsive image */
+            height: auto;
+            border-radius: 10px; /* Rounded corners for the image */
+        }
+
+        /* Product title styling */
+        h3 {
+            font-size: 2rem; /* Larger font for the product name */
+            color: #333; /* Dark color for contrast */
+            margin-top: 15px;
+            font-weight: 600; /* Make the title stand out */
+        }
+
+        /* Product description styling */
+        .product-description {
+            margin: 15px 0;
+            font-size: 1.1rem; /* Slightly larger font for better readability */
+            line-height: 1.8; /* Increase line spacing for comfort */
+            color: #333; /* Neutral color for text */
+        }
+
+        /* Styling for unordered lists */
+        ul {
+            margin: 20px auto;
+            padding-left: 0; /* Remove default padding */
+            list-style-type: none; /* Remove default bullet points */
+            text-align: left; /* Align text to the left */
+        }
+
+        /* Individual list items */
+        ul li {
+            margin-bottom: 10px; /* Space between list items */
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        /* Custom checkmark style */
+        ul li::before {
+            content: "✓"; /* Custom checkmark point */
+            color: #28a745; /* Green checkmark color */
+            font-size: 1.5rem; /* Larger checkmark for better visibility */
+        }
+
+        /* Styling for the "Benefits" heading */
+        .benefits-title {
+            text-align: center; /* Center the text */
+            font-size: 1.5rem; /* Slightly larger font */
+            font-weight: bold; /* Make it bold */
+            margin: 20px 0; /* Add space around the title */
+        }
+
+        /* Button styling */
+        .buy-button {
+            display: inline-block;
+            text-align: center;
+            background-color: #28a745; /* Green background for the button */
+            color: white;
+            padding: 10px 20px; /* Inner padding for the button */
+            text-decoration: none; /* Remove underline */
+            margin-top: 20px;
+            border-radius: 5px; /* Rounded edges */
+            font-size: 1rem; /* Standard font size */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
+
+        .buy-button:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+        nav ul {
+            display: flex;
+            padding: 5px 10px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 -25px;
+            padding: 0px;
+        }
+
+        nav ul li a {
+            font-size: 0.9rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-left">
+                <a href="index.html">
+                    <img src="images/Freshvet Logo.jpg" alt="Freshvet Logo" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="soil-conditioners.html">Soil Conditioners</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Soil Conditioner Products Section -->
+    <main>
+        <section id="soil-conditioners" style="background-image: url('images/ham.jpg');">
+            <h2>Our Soil Conditioners</h2>
+            <p style="text-align: center; color: white;">Improve your soil health with Rhizovator, a high-quality soil conditioner that enhances root development and soil structure.</p>
+
+            <!-- Soil Conditioner Product: Rhizovator -->
+            <div class="product-box" id="soil-conditioner-rhizovator">
+                <img src="images/Rhizovator.jpg" alt="Rhizovator Soil Conditioner" class="product-image">
+                <h3>Rhizovator Soil Conditioner</h3>
+                <p class="product-description">Rhizovator helps improve soil structure, promotes root growth and enhances nutrient uptake by plants.</p>
+                <div class="benefits-title">Benefits:</div>
+                <ul>
+                    <li>Improves soil aeration and drainage</li>
+                    <li>Enhances root development and growth</li>
+                    <li>Increases nutrient and water retention in soil</li>
+                    <li>Promotes healthier, more productive crops</li>
+                </ul>
+                <a href="contact.html" class="buy-button">Buy Now</a>
+            </div>
+        </section>
+    </main>
+
+<script>
+    // Array of image paths for the products section
+const productImages = [
+    'images/ham.jpg',
+    'images/35.jpeg',
+    'images/34.jpeg',
+    'images/33.jpeg',
+    'images/32.jpeg' // First image
+];
+
+let productIndex = 0; // Start with the first image
+let productBackground = document.getElementById('soil-conditioners'); // Products section
+
+// Function to preload the next image
+function preloadImage(src) {
+    const img = new Image();
+    img.src = src;
+}
+
+// Function to update the background image of the products section
+function changeProductBackground() {
+    // Preload the next image in the sequence to ensure smooth transition
+    preloadImage(productImages[(productIndex + 1) % productImages.length]);
+
+    // Change the background image with a smooth transition
+    productBackground.style.transition = 'background-image 1.5s ease-in-out'; // Ensuring the smooth transition
+    productBackground.style.backgroundImage = `url('${productImages[productIndex]}')`;
+
+    // Update the index to the next image in the array
+    productIndex = (productIndex + 1) % productImages.length; // Loop back to the first image
+}
+
+// Ensure the first transition happens smoothly on page load
+window.onload = function() {
+    changeProductBackground();
+    setInterval(changeProductBackground, 4000);
+};
+
+    </script>
+</body>
+</html>
+

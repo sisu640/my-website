@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay updated with the latest news and trends in the agrochemical industry.">
+    <meta name="author" content="Freshvet">
+    <title>News - Freshvet</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/four.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            border-radius: 20px;
+        }
+
+         body.fade-in {
+            opacity: 1;
+        }
+
+        header, main, section {
+            border-radius: 20px;
+        }
+
+        #news {
+            padding: 40px;
+            background-color: transparent;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .news-article {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .news-article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .news-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .news-title {
+            font-size: 1.8rem;
+            color: #333;
+            margin-top: 15px;
+        }
+
+        .news-description {
+            margin: 15px 0;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .read-more {
+            display: inline-block;
+            text-align: center;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more:hover {
+            background-color: #218838;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-left">
+                <a href="index.html">
+                    <img src="images/Freshvet Logo.jpg" alt="Freshvet Logo" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="news">
+            <div class="news-grid">
+
+                   <div class="news-article">
+                    <img src="images/B.jpeg" alt="What Are Fertilizers?" class="news-image">
+                    <h3 class="news-title">What Are Fertilizers and Why Are They Important?</h3>
+                    <p class="news-description">Fertilizers are substances that supply essential nutrients to plants to improve growth and increase yield. They are vital for replenishing soil nutrients and supporting sustainable agriculture.</p>
+                    <a href="articles.html" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-article">
+                    <img src="images/A.jpeg" alt="Types of Fertilizers" class="news-image">
+                    <h3 class="news-title">What Are the Different Types of Fertilizers?</h3>
+                    <p class="news-description">Fertilizers are broadly categorized into organic and inorganic types. Organic fertilizers come from natural sources, while inorganic ones are synthetically manufactured to provide specific nutrients.</p>
+                    <a href="2.html" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-article">
+                    <img src="images/C.jpeg" alt="Impact on Soil Health" class="news-image">
+                    <h3 class="news-title">How Do Fertilizers Impact Soil Health?</h3>
+                    <p class="news-description">Fertilizers help maintain soil fertility by replenishing lost nutrients. However, overuse can lead to soil degradation and nutrient imbalance, making proper application critical for long-term soil health.</p>
+                    <a href="3.html" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-article">
+                    <img src="images/D.jpeg" alt="News Image 5" class="news-image">
+                    <h3 class="news-title">Types of Agrochemicals</h3>
+                    <p class="news-description">Agrochemicals include pesticides, fertilizers, plant growth regulators, soil conditioners, and adjuvants. These chemicals serve different purposes like pest control, plant nourishment, and improving soil fertility.</p>
+                    <a href="4.html" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-article">
+                    <img src="images/E.jpeg" alt="News Image 6" class="news-image">
+                    <h3 class="news-title">How Do Pesticides Work?</h3>
+                    <p class="news-description">Pesticides work by targeting specific pests through various mechanisms such as disrupting their nervous system, inhibiting growth, or preventing reproduction. The method depends on the type of pesticide used.</p>
+                    <a href="5.html" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-article">
+                    <img src="images/F.jpeg" alt="News Image 7" class="news-image">
+                    <h3 class="news-title">Are Agrochemicals Safe to Use?</h3>
+                    <p class="news-description">When used according to manufacturer instructions, agrochemicals are generally safe. However, improper use can lead to health risks and environmental damage. It's important to follow safety guidelines.</p>
+                    <a href="6.html" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-article">
+                    <img src="images/G.jpeg" alt="News Image 8" class="news-image">
+                    <h3 class="news-title">Environmental Impacts of Agrochemicals</h3>
+                    <p class="news-description">Improper use of agrochemicals can lead to environmental issues like water contamination, soil degradation, and harm to non-target organisms. Sustainable practices help mitigate these risks.</p>
+                    <a href="7.html" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-article">
+                    <img src="images/H.jpeg" alt="News Image 9" class="news-image">
+                    <h3 class="news-title">Managing Pesticide Resistance</h3>
+                    <p class="news-description">Pesticide resistance can be managed through practices like rotating different pesticide classes, using integrated pest management (IPM), and applying pesticides only when necessary to reduce resistance buildup.</p>
+                    <a href="8.html" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-article">
+                    <img src="images/I.jpeg" alt="News Image 10" class="news-image">
+                    <h3 class="news-title">Regulations Around Agrochemical Use</h3>
+                    <p class="news-description">Agrochemical use is regulated by government agencies to ensure safety. Regulations cover aspects like product approval, application methods, and residue limits to protect human health and the environment.</p>
+                    <a href="9.html" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-article">
+    <img src="images/J.jpeg" alt="Slow-Release Fertilizers" class="news-image">
+    <h3 class="news-title">Benefits of Slow-Release Fertilizers</h3>
+    <p class="news-description">Slow-release fertilizers minimize nutrient loss, promote sustained plant growth, and reduce environmental impact, making them a key tool for sustainable agriculture.</p>
+    <a href="10.html" class="read-more">Read More</a>
+</div>
+
+<div class="news-article">
+    <img src="images/K.jpeg" alt="Biopesticides in Farming" class="news-image">
+    <h3 class="news-title">Biopesticides: The Future of Sustainable Farming</h3>
+    <p class="news-description">Biopesticides are derived from natural sources and offer an eco-friendly alternative to chemical pesticides, reducing environmental and health risks.</p>
+    <a href="11.html" class="read-more">Read More</a>
+</div>
+
+<div class="news-article">
+    <img src="images/L.jpeg" alt="Soil pH and Fertilizers" class="news-image">
+    <h3 class="news-title">The Relationship Between Soil pH and Fertilizer Effectiveness</h3>
+    <p class="news-description">Soil pH significantly impacts nutrient availability. Learn how to test and adjust pH for optimal fertilizer use and plant growth.</p>
+    <a href="12.html" class="read-more">Read More</a>
+</div>
+
+<div class="news-article">
+    <img src="images/M.jpeg" alt="Agrochemical Runoff" class="news-image">
+    <h3 class="news-title">The Role of Buffer Strips in Reducing Agrochemical Runoff</h3>
+    <p class="news-description">Buffer strips between fields and waterways help prevent contamination and protect ecosystems from the harmful effects of runoff.</p>
+    <a href="13.html" class="read-more">Read More</a>
+</div>
+
+<div class="news-article">
+    <img src="images/N.jpeg" alt="Precision Agriculture" class="news-image">
+    <h3 class="news-title">Emerging Technologies in Precision Agriculture</h3>
+    <p class="news-description">Technologies like drones and IoT sensors are revolutionizing agrochemical application, enhancing efficiency and sustainability.</p>
+    <a href="14.html" class="read-more">Read More</a>
+</div>
+
+<div class="news-article">
+    <img src="images/O.jpeg" alt="Nanotechnology in Agriculture" class="news-image">
+    <h3 class="news-title">Nanotechnology in Fertilizers and Pesticides</h3>
+    <p class="news-description">Nanotechnology introduces precision and efficiency in agrochemical products, enabling targeted nutrient delivery and pest control.</p>
+    <a href="15.html" class="read-more">Read More</a>
+</div>
+
+
+            </div>
+        </section>
+       <script>
+    // Array of image paths for the background
+    const productImages = [
+        'images/ham.jpg',
+        'images/35.jpeg',
+        'images/34.jpeg',
+        'images/33.jpeg',
+        'images/32.jpeg'
+    ];
+
+    // Array of corresponding background colors
+    const backgroundColors = [
+        '#FFD700', // Gold
+        '#FF4500', // Orange Red
+        '#8A2BE2', // Blue Violet
+        '#5F9EA0', // Cadet Blue
+        '#7FFF00'  // Chartreuse
+    ];
+
+    let productIndex = 0; // Start with the first image
+    const bodyElement = document.body; // Target the body element
+
+    // Function to preload the next image
+    function preloadImage(src) {
+        const img = new Image();
+        img.src = src;
+    }
+
+    // Function to update the background image and color of the body
+    function changeProductBackground() {
+        // Preload the next image in the sequence to ensure smooth transition
+        preloadImage(productImages[(productIndex + 1) % productImages.length]);
+
+        // Change the background image and color with a smooth transition
+        bodyElement.style.transition = "background-image 1s ease-in-out, background-color 1s ease-in-out"; // 1s for smooth transition
+        bodyElement.style.backgroundImage = `url('${productImages[productIndex]}')`;
+        bodyElement.style.backgroundColor = backgroundColors[productIndex];
+
+        // Update the index to the next image and color in the array
+        productIndex = (productIndex + 1) % productImages.length; // Loop back to the first image and color
+    }
+
+    // Ensure the first transition happens smoothly on page load
+    window.onload = function () {
+        changeProductBackground();
+        setInterval(changeProductBackground, 7000); // Change every 4 seconds
+    };
+</script>
+</body>
+</html>

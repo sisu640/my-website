@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Freshvet - Your Trusted Partner in Sustainable Farming.">
+    <meta name="author" content="Freshvet">
+    <title>About Us - Freshvet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <!-- Logo on the Left -->
+            <div class="logo-left">
+                <a href="index.html">
+                    <img src="images/Freshvet Logo.jpg" alt="Freshvet Logo" class="logo">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Article Section -->
+    <div class="article-body">
+        <style>
+            body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/four.jpeg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            border-radius: 20px;
+            color: #fff; /* Change text color to white for contrast */
+        }
+
+        header, main, section {
+            border-radius: 20px; /* Rounded corners for sections */
+        }
+
+/* General Styling for the Article */
+.article-body {
+    font-family: 'Arial', sans-serif;
+    color: #333333; /* Dark grey for body text */
+    line-height: 1.8;
+    padding: 30px;
+    max-width: 850px;
+    margin: 20px auto;
+    background-color: #e7f7ff; /* Soft pastel blue */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Section Styling */
+.article-body section {
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: #ffffff; /* White background for each section */
+    border-radius: 12px; /* Rounded corners for sections */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Soft shadow for sections */
+    transition: background-color 0.3s, border-left 0.3s;
+}
+
+.article-body section:hover {
+    background-color: #f5f5f5; /* Light grey on hover */
+    border-left: 6px solid #ff5722; /* Coral red border on hover */
+}
+
+/* Header Styling */
+.article-body h2 {
+    font-size: 1.8em;
+    color: #1976d2; /* Blue for headings */
+    margin-bottom: 20px;
+    text-align: center;
+    word-spacing: 0.05em; /* Consistent word spacing */
+}
+
+.article-body h3 {
+    font-size: 1.5em;
+    color: #9B59B6; /* Muted dark grey for subheadings */
+    margin-bottom: 15px;
+    word-spacing: 0.05em;
+}
+
+.article-body h4 {
+    font-size: 1.3em;
+    color: #388e3c; /* Deep green for smaller headings */
+    margin-bottom: 10px;
+    word-spacing: 0.05em;
+}
+
+/* Paragraph Styling */
+.article-body p {
+    font-size: 1.15em;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.75;
+    color: #555;
+    word-spacing: 0.05em;
+}
+
+/* List Styling */
+.article-body ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.article-body ul li {
+    font-size: 1.15em;
+    margin-bottom: 12px;
+    color: #616161;
+    word-spacing: 0.05em;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Adding individual background colors and text colors for each list item */
+.article-body ul li:nth-child(1) {
+    background-color: #f1f8e9; /* Soft light green */
+    color: #388e3c; /* Deep green text */
+}
+
+.article-body ul li:nth-child(2) {
+    background-color: #ffe0b2; /* Soft peach */
+    color: #f57c00; /* Dark orange text */
+}
+
+.article-body ul li:nth-child(3) {
+    background-color: #e3f2fd; /* Light cyan */
+    color: #0288d1; /* Blue text */
+}
+
+.article-body ul li:nth-child(4) {
+    background-color: #fff3e0; /* Soft peachy yellow */
+    color: #d32f2f; /* Dark red text */
+}
+
+.article-body ul li:nth-child(5) {
+    background-color: #fbe9e7; /* Light coral */
+    color: #d32f2f; /* Dark red text */
+}
+
+.article-body ul li:nth-child(6) {
+    background-color: #e8f5e9; /* Soft green */
+    color: #388e3c; /* Deep green text */
+}
+
+.article-body ul li:nth-child(7) {
+    background-color: #e8f5e9; /* Pale mint */
+    color: #388e3c; /* Dark green text */
+}
+
+/* Links Styling */
+.article-body a {
+    color: #0288d1; /* Blue for links */
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.article-body a:hover {
+    color: #1976d2; /* Slightly darker blue for hover */
+    text-decoration: underline;
+}
+
+/* Section-specific Colors */
+#emerging-technologies-precision-agriculture {
+    background-color: #e3f2fd;
+    border-left: 6px solid #0288d1;
+}
+
+#drones-in-precision-agriculture {
+    background-color: #ffe0b2;
+    border-left: 6px solid #ff5722;
+}
+
+#iot-sensors {
+    background-color: #f1f8e9;
+    border-left: 6px solid #388e3c;
+}
+
+#data-analytics-ai {
+    background-color: #fff3e0;
+    border-left: 6px solid #d32f2f;
+}
+
+#autonomous-tractors {
+    background-color: #fbe9e7;
+    border-left: 6px solid #f57c00;
+}
+
+#satellite-technology {
+    background-color: #e8f5e9;
+    border-left: 6px solid #388e3c;
+}
+
+#robotics-for-agrochemical-application {
+    background-color: #f5f5f5;
+    border-left: 6px solid #0288d1;
+}
+
+#conclusion {
+    background-color: #ffe0b2;
+    border-left: 6px solid #ff5722;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article-body {
+        padding: 20px;
+    }
+
+    .article-body h2 {
+        font-size: 1.5em;
+    }
+
+    .article-body h3 {
+        font-size: 1.4em;
+    }
+
+    .article-body h4 {
+        font-size: 1.3em;
+    }
+
+    .article-body p {
+        font-size: 1em;
+    }
+
+    .article-body ul li {
+        font-size: 1em;
+    }
+
+    /* Ensure consistent word spacing */
+    .article-body h2, .article-body h3, .article-body h4,
+    .article-body p, .article-body ul li {
+        word-spacing: 0.05em;
+    }
+}
+
+
+        </style>
+<section id="emerging-technologies-precision-agriculture">
+    <h2>Emerging Technologies in Precision Agriculture: Enhancing Efficiency and Sustainability</h2>
+    <p>In recent years, precision agriculture has evolved with the integration of cutting-edge technologies. These innovations have transformed how agrochemicals are applied, providing more efficient, sustainable, and targeted solutions. Drones, IoT sensors, and data analytics are some of the most significant contributors to this transformation. This article will explore these emerging technologies, their applications in agrochemical use, and the benefits they bring to the agricultural industry.</p>
+</section>
+
+<section id="drones-in-precision-agriculture">
+    <h2>Drones in Precision Agriculture</h2>
+    <p>Drones have become an indispensable tool in modern agriculture. These unmanned aerial vehicles (UAVs) enable farmers to monitor and manage crops with unmatched precision. Here's how drones are reshaping agrochemical application:</p>
+
+    <h3>Aerial Mapping and Crop Monitoring</h3>
+    <ul>
+        <li>Drones equipped with advanced cameras can capture high-resolution images of large agricultural fields. These images are analyzed to detect variations in plant health, allowing farmers to apply fertilizers or pesticides only where necessary.</li>
+    </ul>
+
+    <h3>Targeted Agrochemical Application</h3>
+    <ul>
+        <li>Drones can be programmed to apply agrochemicals with high precision, reducing the overuse of fertilizers and pesticides, thus minimizing environmental impact.</li>
+    </ul>
+
+    <h3>Reduced Labor Costs</h3>
+    <ul>
+        <li>Drones enable farmers to conduct aerial surveys and apply chemicals in a fraction of the time compared to traditional methods, lowering labor costs and improving overall efficiency.</li>
+    </ul>
+</section>
+
+<section id="iot-sensors">
+    <h2>Internet of Things (IoT) Sensors</h2>
+    <p>IoT sensors are revolutionizing data collection in agriculture by providing real-time insights into soil conditions, crop health, and weather patterns. These sensors are often integrated into agricultural equipment and systems, offering numerous benefits for agrochemical use:</p>
+
+    <h3>Soil Health Monitoring</h3>
+    <ul>
+        <li>Sensors embedded in the soil can measure moisture levels, pH, temperature, and nutrient content. This data helps farmers decide the optimal timing and quantity of agrochemicals to use.</li>
+    </ul>
+
+    <h3>Precision Fertilization</h3>
+    <ul>
+        <li>IoT sensors can detect nutrient deficiencies in plants, allowing farmers to apply fertilizers only in areas where they are needed, reducing waste and improving crop yields.</li>
+    </ul>
+
+    <h3>Climate and Weather Monitoring</h3>
+    <ul>
+        <li>With IoT-enabled weather stations, farmers can predict the best days for pesticide application based on weather patterns such as wind speed and rainfall, reducing the risk of chemical runoff.</li>
+    </ul>
+</section>
+
+<section id="data-analytics-ai">
+    <h2>Data Analytics and Artificial Intelligence (AI)</h2>
+    <p>Data analytics and AI technologies are being integrated into precision agriculture, allowing farmers to make smarter, data-driven decisions:</p>
+
+    <h3>Predictive Analytics</h3>
+    <ul>
+        <li>By analyzing historical data and weather patterns, AI can predict pest outbreaks or potential crop diseases, enabling farmers to apply agrochemicals proactively, reducing the need for reactive treatments.</li>
+    </ul>
+
+    <h3>Optimizing Agrochemical Use</h3>
+    <ul>
+        <li>AI algorithms can process data from drones, IoT sensors, and satellite images to create precise maps of fields, highlighting areas that require specific agrochemical applications. This precision reduces chemical wastage, improves efficiency, and supports sustainability efforts.</li>
+    </ul>
+
+    <h3>Real-time Decision-Making</h3>
+    <ul>
+        <li>With data analytics tools, farmers can receive real-time recommendations on agrochemical application based on live data, optimizing their usage and improving crop health.</li>
+    </ul>
+</section>
+
+<section id="autonomous-tractors">
+    <h2>Autonomous Tractors and Equipment</h2>
+    <p>Autonomous tractors and machinery are another breakthrough in precision agriculture. These self-driving machines are equipped with GPS and AI to perform tasks with high precision:</p>
+
+    <h3>Automated Application</h3>
+    <ul>
+        <li>Autonomous sprayers and tractors can apply agrochemicals at the exact rate needed, ensuring uniform coverage and minimizing environmental impact.</li>
+    </ul>
+
+    <h3>Reduced Human Labor</h3>
+    <ul>
+        <li>Autonomous equipment operates continuously, reducing the need for human intervention and allowing farmers to focus on other important tasks.</li>
+    </ul>
+
+    <h3>Improved Efficiency</h3>
+    <ul>
+        <li>Autonomous tractors can work around the clock, leading to faster field management and more timely agrochemical application.</li>
+    </ul>
+</section>
+
+<section id="satellite-technology">
+    <h2>Satellite Technology</h2>
+    <p>Satellite imagery has been used for years to monitor crop growth, but with new advancements, it has become more accurate and accessible to farmers:</p>
+
+    <h3>Field Monitoring</h3>
+    <ul>
+        <li>Satellites can track crop health, detect stress signs, and monitor vegetation index levels, enabling farmers to apply agrochemicals only in areas that need attention.</li>
+    </ul>
+
+    <h3>Big Data Integration</h3>
+    <ul>
+        <li>Satellites provide valuable data that can be integrated into AI and data analytics systems to enhance decision-making processes in agrochemical application.</li>
+    </ul>
+</section>
+
+<section id="robotics-for-agrochemical-application">
+    <h2>Robotics for Agrochemical Application</h2>
+    <p>Robotic systems are being developed to perform highly specific agrochemical application tasks, such as applying pesticides or herbicides to individual plants:</p>
+
+    <h3>Weed Control</h3>
+    <ul>
+        <li>Robotic weeders use sensors to identify and target specific weeds in a field, reducing the need for widespread herbicide use.</li>
+    </ul>
+
+    <h3>Spot Treatment</h3>
+    <ul>
+        <li>Robots equipped with specialized tools can apply pesticides and herbicides to individual plants, minimizing chemical usage and protecting the environment.</li>
+    </ul>
+</section>
+
+<section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>Emerging technologies like drones, IoT sensors, AI, autonomous machinery, and robotics are revolutionizing agrochemical use in precision agriculture. These innovations allow for more accurate, targeted, and sustainable applications of fertilizers and pesticides, reducing waste and minimizing environmental impact. As the agricultural industry continues to embrace these technologies, we can expect a future where farming becomes more efficient, productive, and environmentally responsible. By leveraging these tools, farmers can not only enhance their crop yields but also contribute to a greener, more sustainable world.</p>
+</section>
+
+
+
+
+<script>
+    // Array of image paths for the products section (used as background images)
+    const productImages = [
+        'images/ham.jpg',
+        'images/35.jpeg',
+        'images/34.jpeg',
+        'images/33.jpeg',
+        'images/32.jpeg' // First image
+    ];
+
+    let productIndex = 0; // Start with the first image
+    let articleBody = document.querySelector('.article-body'); // Article body element
+
+    // Function to preload the next image
+    function preloadImage(src) {
+        const img = new Image();
+        img.src = src;
+    }
+
+    // Function to update the background image of the article body
+    function changeArticleBackground() {
+        // Preload the next image in the sequence to ensure smooth transition
+        preloadImage(productImages[(productIndex + 1) % productImages.length]);
+
+        // Change the background image with a smooth transition
+        articleBody.style.transition = 'background-image 1.5s ease-in-out'; // Ensuring the smooth transition
+        articleBody.style.backgroundImage = `url('${productImages[productIndex]}')`;
+
+        // Update the index to the next image in the array
+        productIndex = (productIndex + 1) % productImages.length; // Loop back to the first image
+    }
+
+    // Ensure the first transition happens smoothly on page load
+    window.onload = function() {
+        changeArticleBackground();
+        setInterval(changeArticleBackground, 4000); // Change background every 4 seconds
+    };
+</script>
+
+</body>
+</html>

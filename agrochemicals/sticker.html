@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Agral 90, an effective sticker solution to enhance the performance of your pesticides and herbicides.">
+    <meta name="author" content="Freshvet">
+    <title>Sticker - Freshvet</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url('images/GH.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            border-radius: 20px;
+            transition: background-image 1.5s ease-in-out;
+        }
+
+        header, main, section {
+            border-radius: 20px;
+        }
+
+        #stickers {
+            padding: 40px;
+            background-color: transparent;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 700;
+        }
+
+        p {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .product-box {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: #333;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        .product-description {
+            margin: 15px 0;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        ul {
+            margin: 20px auto;
+            padding-left: 0;
+            list-style-type: none;
+            text-align: left;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        ul li::before {
+            content: "•";
+            color: #28a745;
+            font-size: 1.0rem;
+        }
+
+        .benefits-title {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .buy-button {
+            display: inline-block;
+            text-align: center;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #218838;
+        }
+
+        nav ul {
+            display: flex;
+            padding: 5px 10px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 -5px;
+            padding: 0px;
+        }
+
+        nav ul li a {
+            font-size: 0.9rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-left">
+                <a href="index.html">
+                    <img src="images/Freshvet Logo.jpg" alt="Freshvet Logo" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="sticker.html">Sticker</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="stickers" style="background-image: url('images/ham.jpg');">
+            <h2>Our Sticker Product</h2>
+            <p style="text-align: center; color: white;">Explore Agral 90, a high-quality sticker solution that enhances pesticide and herbicide performance.</p>
+
+            <div class="product-box" id="sticker-agral">
+                <img src="images/Agral 90.jpg" alt="Agral 90 Sticker" class="product-image">
+                <h3>Agral 90 Sticker</h3>
+                <p class="product-description">Agral 90 is a wetting agent and sticker that enhances the performance of pesticides and herbicides by improving spread and adhesion on plant surfaces.</p>
+                <div class="benefits-title">Benefits:</div>
+                <ul>
+                    <li>Improves adhesion of pesticides and herbicides on plant surfaces</li>
+                    <li>Enhances the spread and effectiveness of the chemical treatment</li>
+                    <li>Reduces the loss of spray solutions due to wind or rain</li>
+                </ul>
+                <a href="contact.html" class="buy-button">Buy Now</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const productImages = [
+            'images/ham.jpg',
+            'images/35.jpeg',
+            'images/34.jpeg',
+            'images/33.jpeg',
+            'images/32.jpeg'
+        ];
+
+        let productIndex = 0;
+        let productBackground = document.getElementById('stickers');
+
+        function preloadImage(src) {
+            const img = new Image();
+            img.src = src;
+        }
+
+        function changeProductBackground() {
+            preloadImage(productImages[(productIndex + 1) % productImages.length]);
+            productBackground.style.transition = 'background-image 1.5s ease-in-out';
+            productBackground.style.backgroundImage = `url('${productImages[productIndex]}')`;
+            productIndex = (productIndex + 1) % productImages.length;
+        }
+
+        window.onload = function() {
+            changeProductBackground();
+            setInterval(changeProductBackground, 4000);
+        };
+    </script>
+</body>
+</html>

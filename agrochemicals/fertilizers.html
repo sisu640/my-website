@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our Fertilizer products for enhanced crop yields.">
+    <meta name="author" content="Freshvet">
+    <title>Fertilizers - Freshvet</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/one.jpeg'); /* Background image from index.html */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            border-radius: 20px; /* Rounded corners on the body */
+        }
+
+        header, main, section {
+            border-radius: 20px; /* Same rounded corners for header, main, and section */
+        }
+
+        /* Fertilizer Section Specific Styles */
+        #fertilizers {
+            padding: 40px;
+            background-color: transparent; /* Fully transparent background */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 20px; /* Rounded edges for the fertilizer section */
+            backdrop-filter: none; /* No blur effect, keep the background clear */
+            overflow: hidden; /* Ensure the background image is clipped to the rounded corners */
+            margin-bottom: 40px; /* Ensure some space at the bottom for rounded edges to show */
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.8rem; /* Larger font for emphasis */
+            margin-bottom: 20px;
+            color: white; /* White color for better contrast */
+            font-weight: 700; /* Bold text for visibility */
+        }
+
+        /* Product title styling */
+        h3 {
+            font-size: 2rem; /* Larger font for the product name */
+            color: #333; /* Dark color for contrast */
+            margin-top: 15px;
+            font-weight: 600; /* Make the title stand out */
+        }
+
+        .product-box {
+           background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+            border-radius: 10px; /* Rounded edges */
+            margin: 20px auto; /* Center the box */
+            padding: 20px; /* Inner spacing */
+            max-width: 600px; /* Limit width for better readability */
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+        }
+
+        .product-box:hover {
+            transform: none; /* Remove hover effect to keep products grounded */
+        }
+
+        .product-image {
+           width: 100%; /* Fully responsive image */
+            height: auto;
+            border-radius: 10px; /* Rounded corners for the image */
+        }
+
+        .product-description {
+           margin: 15px 0;
+            font-size: 1.1rem; /* Slightly larger font for better readability */
+            line-height: 1.8; /* Increase line spacing for comfort */
+            color: #333; /* Neutral color for text */
+        }
+
+        .buy-button {
+            display: block;
+            text-align: center;
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            margin: 15px;
+            border-radius: 5px;
+        }
+
+        .buy-button:hover {
+            background-color: #218838;
+        }
+
+        /* Custom Styling for Benefits */
+        .benefits-title {
+            text-align: center; /* Center the text */
+            font-size: 1.5rem; /* Slightly larger font */
+            font-weight: bold; /* Make it bold */
+            margin: 20px 0; /* Add space around the title */
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 0;
+            list-style-type: none;
+            text-align: left; /* Left align the benefits list */
+        }
+
+        ul li {
+             margin-bottom: 10px; /* Space between list items */
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        ul li::before {
+            content: "✓";
+            color: #28a745;
+            font-size: 1.5rem; /* Larger checkmark for visibility */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <!-- Logo on the Left -->
+            <div class="logo-left">
+                <a href="index.html">
+                    <img src="images/Freshvet Logo.jpg" alt="Freshvet Logo" class="logo">
+                </a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="fertilizers.html">Fertilizers</a></li> <!-- Link to Fertilizers Page -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Fertilizer Products Section -->
+    <main>
+        <section id="fertilizers">
+            <h2>Our Fertilizers</h2>
+            <p style="text-align: center; color: white;">Discover our range of high-quality fertilizers designed to boost crop growth and enhance soil health.</p>
+
+            <!-- Fertilizer Product 1: Korn Kali -->
+            <div class="product-box" id="fertilizer-korn-kali">
+                <img src="images/korn-kali.jpg" alt="Korn Kali Fertilizer" class="product-image">
+                <h3>Korn Kali Fertilizer</h3>
+                <p class="product-description">A potassium-rich fertilizer ideal for enhancing fruit quality and improving plant stress resistance.</p>
+                <div class="benefits-title">Benefits:</div>
+                <ul>
+                    <li>Enhances fruit quality and size</li>
+                    <li>Improves plant stress resistance</li>
+                    <li>Helps in better disease resistance</li>
+                </ul>
+                <a href="contact.html" class="buy-button">Buy Now</a>
+            </div>
+
+            <!-- Fertilizer Product 2: Yara DAP -->
+            <div class="product-box" id="fertilizer-yara-dap">
+                <img src="images/Yara DAP.jpg" alt="Yara DAP Fertilizer" class="product-image">
+                <h3>Yara DAP Fertilizer</h3>
+                <p class="product-description">A high-quality fertilizer that provides both nitrogen and phosphorus, ideal for promoting healthy root development and plant growth.</p>
+                <div class="benefits-title">Benefits:</div>
+                <ul>
+                    <li>Promotes healthy root development</li>
+                    <li>Enhances early plant growth</li>
+                    <li>Improves overall plant health</li>
+                </ul>
+                <a href="contact.html" class="buy-button">Buy Now</a>
+            </div>
+
+            <!-- Fertilizer Product 3: PatentKali -->
+            <div class="product-box" id="fertilizer-patentkali">
+                <img src="images/PatentKali.jpg" alt="Patent Kali Fertilizer" class="product-image">
+                <h3>PatentKali Fertilizer</h3>
+                <p class="product-description">A high-quality potassium fertilizer designed to improve plant resistance and enhance crop yields.</p>
+                <div class="benefits-title">Benefits:</div>
+                <ul>
+                    <li>Enhances potassium levels in soil</li>
+                    <li>Improves plant health and yield</li>
+                    <li>Increases plant stress tolerance</li>
+                </ul>
+                <a href="contact.html" class="buy-button">Buy Now</a>
+            </div>
+
+            <!-- Fertilizer Product 4: OCP DAP -->
+            <div class="product-box" id="fertilizer-ocp-dap">
+                <img src="images/OCP DAP.jpg" alt="OCP DAP Fertilizer" class="product-image">
+                <h3>OCP DAP Fertilizer</h3>
+                <p class="product-description">A premium fertilizer rich in nitrogen and phosphorus, perfect for enhancing plant growth and improving crop quality.</p>
+                <div class="benefits-title">Benefits:</div>
+                <ul>
+                    <li>Provides balanced nutrition for plants</li>
+                    <li>Supports root and flower development</li>
+                    <li>Boosts overall plant health and productivity</li>
+                </ul>
+                <a href="contact.html" class="buy-button">Buy Now</a>
+            </div>
+        </section>
+    </main>
+ <script>
+        // Array of image paths for the products section
+const productImages = [
+    'images/ham.jpg',
+    'images/35.jpeg',
+    'images/34.jpeg',
+    'images/33.jpeg',
+    'images/32.jpeg' // First image
+];
+
+let productIndex = 0; // Start with the first image
+let productBackground = document.getElementById('fertilizers'); // Products section
+
+// Function to preload the next image
+function preloadImage(src) {
+    const img = new Image();
+    img.src = src;
+}
+
+// Function to update the background image of the products section
+function changeProductBackground() {
+    // Preload the next image in the sequence to ensure smooth transition
+    preloadImage(productImages[(productIndex + 1) % productImages.length]);
+
+    // Change the background image with a smooth transition
+    productBackground.style.transition = 'background-image 1.5s ease-in-out'; // Ensuring the smooth transition
+    productBackground.style.backgroundImage = `url('${productImages[productIndex]}')`;
+
+    // Update the index to the next image in the array
+    productIndex = (productIndex + 1) % productImages.length; // Loop back to the first image
+}
+
+// Ensure the first transition happens smoothly on page load
+window.onload = function() {
+    changeProductBackground();
+    setInterval(changeProductBackground, 4000);
+};
+
+    </script>
+</body>
+</html>

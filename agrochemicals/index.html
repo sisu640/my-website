@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover sustainable farming solutions with Freshvet - your trusted partner in agrochemicals, fertilizers, and herbicides.">
+    <meta name="keywords" content="Agrochemicals, Sustainable Farming, Fertilizers, Herbicides, Fungicides, Insecticides">
+    <meta name="author" content="Freshvet">
+    <title>Agrochemicals Advertising</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url('images/GH.jpg'); /* Default starting image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            border-radius: 20px;
+            transition: background-image 1.5s ease-in-out; /* Smooth transition for background image */
+        }
+
+        header, main, section {
+            border-radius: 20px;
+        }
+
+        /* Products Section Styling */
+        #products {
+            transition: background-image 1.5s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 5px solid #333; /* Ensure the border is always visible */
+            padding: 20px; /* Add padding to keep content spaced from border */
+            border-radius: 20px; /* Maintain the rounded corners */
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product-box {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .product-box:hover {
+            transform: scale(1.05);
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- Logo on the Left -->
+            <div class="logo-left">
+                <a href="index.html">
+                    <img src="images/Freshvet Logo.jpg" alt="Freshvet Logo" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </nav>
+            <h1>Welcome to Freshvet</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Product Filter -->
+        <section id="product-filter">
+            <label for="product-category">Filter by Category:</label>
+            <select id="product-category" onchange="window.location.href=this.value;">
+                <option value="all.html">All</option>
+                <option value="fertilizers.html">Fertilizers</option>
+                <option value="herbicides.html">Herbicides</option>
+                <option value="soil-conditioners.html">Soil Conditioners</option>
+                <option value="foliar.html">Foliar</option>
+                <option value="fungicides.html">Fungicides</option>
+                <option value="insecticides.html">Insecticides</option>
+                <option value="sticker.html">Sticker</option>
+            </select>
+        </section>
+
+        <!-- Products Section with Background Image -->
+        <section id="products" style="background-image: url('images/ham.jpg');">
+            <h2 style="text-align: center;">Our Products</h2>
+            <div class="product-container">
+                <div class="product-box" id="fertilizers-box">
+                    <a href="fertilizers.html" class="product-tab">
+                        <i class="fas fa-leaf"></i> Fertilizers
+                    </a>
+                    <p class="product-description">Boost your soil fertility with our eco-friendly fertilizers.</p>
+                </div>
+                <div class="product-box" id="herbicides-box">
+                    <a href="herbicides.html" class="product-tab">
+                        <i class="fas fa-wheat"></i> Herbicides
+                    </a>
+                    <p class="product-description">Effective weed control for healthier crops.</p>
+                </div>
+                <div class="product-box" id="soil-conditioners-box">
+                    <a href="soil-conditioners.html" class="product-tab">
+                        <i class="fas fa-cogs"></i> Soil Conditioners
+                    </a>
+                    <p class="product-description">Improve soil health for better crop growth.</p>
+                </div>
+                <div class="product-box" id="foliar-box">
+                    <a href="foliar.html" class="product-tab">
+                        <i class="fas fa-cloud-sun"></i> Foliar
+                    </a>
+                    <p class="product-description">Enhance nutrient uptake with our foliar sprays.</p>
+                </div>
+                <div class="product-box" id="fungicides-box">
+                    <a href="fungicides.html" class="product-tab">
+                        <i class="fas fa-spa"></i> Fungicides
+                    </a>
+                    <p class="product-description">Protect your crops from fungal diseases.</p>
+                </div>
+                <div class="product-box" id="insecticides-box">
+                    <a href="insecticides.html" class="product-tab">
+                        <i class="fas fa-bug"></i> Insecticides
+                    </a>
+                    <p class="product-description">Safeguard your crops from harmful insects.</p>
+                </div>
+                <div class="product-box" id="sticker-box">
+                    <a href="sticker.html" class="product-tab">
+                        <i class="fas fa-sticky-note"></i> Sticker
+                    </a>
+                    <p class="product-description">Enhance pesticide performance with our adhesive stickers.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Array of image paths for the products section
+const productImages = [
+    'images/ham.jpg',
+    'images/35.jpeg',
+    'images/34.jpeg',
+    'images/33.jpeg',
+    'images/32.jpeg' // First image
+];let articleBody = document.querySelector('.article-body'); // Article body element
+
+let productIndex = 0; // Start with the first image
+let productBackground = document.getElementById('products'); // Products section
+
+// Function to preload the next image
+function preloadImage(src) {
+    const img = new Image();
+    img.src = src;
+}
+
+// Function to update the background image of the products section
+function changeProductBackground() {
+    // Preload the next image in the sequence to ensure smooth transition
+    preloadImage(productImages[(productIndex + 1) % productImages.length]);
+
+    // Change the background image with a smooth transition
+    productBackground.style.transition = 'background-image 1.5s ease-in-out'; // Ensuring the smooth transition
+    productBackground.style.backgroundImage = `url('${productImages[productIndex]}')`;
+
+    // Update the index to the next image in the array
+    productIndex = (productIndex + 1) % productImages.length; // Loop back to the first image
+}
+
+// Ensure the first transition happens smoothly on page load
+window.onload = function() {
+    changeProductBackground();
+    setInterval(changeProductBackground, 4000);
+};
+
+    </script>
+</body>
+</html>

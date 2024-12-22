@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Freshvet - Your Trusted Partner in Sustainable Farming.">
+    <meta name="author" content="Freshvet">
+    <title>About Us - Freshvet</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/four.jpeg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            border-radius: 20px;
+        }
+
+        header, main, section {
+            border-radius: 20px; /* Rounded corners for sections */
+        }
+
+        #about-us {
+            padding: 40px;
+            background-color: transparent; /* Transparent background */
+            border-radius: 20px; /* Rounded edges for the section */
+            overflow: hidden;
+            margin-bottom: 40px; /* Space below the section */
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-top: 20px;
+            color: white;
+        }
+
+        p, ul {
+            color: white;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Adjusting the unordered list for full width */
+        ul {
+            list-style-type: none; /* No bullet points */
+            padding: 0;
+            width: 100%; /* Make the <ul> span the full width of the page */
+            display: flex; /* Use flexbox for spacing */
+            justify-content: space-between; /* Distribute list items evenly across the width */
+            text-align: center; /* Center the list items horizontally */
+        }
+
+        li {
+            display: inline-block; /* Make list items inline-block so they stay in a row */
+            margin: 0 20px; /* Optional: Adds space between list items */
+            font-size: 1.2rem; /* Adjust font size for better readability */
+        }
+
+        /* Media Query for smaller screens */
+        @media (max-width: 768px) {
+            ul {
+                flex-direction: column; /* Stack items vertically */
+                justify-content: center; /* Center items vertically */
+                align-items: center; /* Center items horizontally */
+            }
+
+            li {
+                margin: 10px 0; /* Space between list items in vertical layout */
+                font-size: 1.5rem; /* Adjust font size for better readability */
+            }
+
+            h2, h3, p {
+                font-size: 1.5rem; /* Reduce font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <!-- Logo on the Left -->
+            <div class="logo-left">
+                <a href="index.html">
+                    <img src="images/Freshvet Logo.jpg" alt="Freshvet Logo" class="logo">
+                </a>
+            </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <main>
+        <section id="about-us">
+            <h2>Our Mission</h2>
+            <p>At Freshvet, we are committed to providing sustainable farming solutions with high-quality agrochemicals, fertilizers, and herbicides. Our goal is to help farmers boost productivity while maintaining environmental balance.</p>
+
+            <h3>Why Choose Freshvet?</h3>
+            <ul>
+                <li>Eco-friendly and sustainable products</li>
+                <li>Proven results in improving crop yields</li>
+                <li>Experienced team with deep knowledge of agriculture</li>
+            </ul>
+        </section>
+    </main>
+<script>
+    // Array of image paths for the background
+    const productImages = [
+        'images/ham.jpg',
+        'images/35.jpeg',
+        'images/34.jpeg',
+        'images/33.jpeg',
+        'images/32.jpeg'
+    ];
+
+    // Array of corresponding background colors
+    const backgroundColors = [
+        '#FFD700', // Gold
+        '#FF4500', // Orange Red
+        '#8A2BE2', // Blue Violet
+        '#5F9EA0', // Cadet Blue
+        '#7FFF00'  // Chartreuse
+    ];
+
+    let productIndex = 0; // Start with the first image
+    const bodyElement = document.body; // Target the body element
+
+    // Function to preload the next image
+    function preloadImage(src) {
+        const img = new Image();
+        img.src = src;
+    }
+
+    // Function to update the background image and color of the body
+    function changeProductBackground() {
+        // Preload the next image in the sequence to ensure smooth transition
+        preloadImage(productImages[(productIndex + 1) % productImages.length]);
+
+        // Change the background image and color with a smooth transition
+        bodyElement.style.transition = "background-image 1s ease-in-out, background-color 1s ease-in-out"; // 1s for smooth transition
+        bodyElement.style.backgroundImage = `url('${productImages[productIndex]}')`;
+        bodyElement.style.backgroundColor = backgroundColors[productIndex];
+
+        // Update the index to the next image and color in the array
+        productIndex = (productIndex + 1) % productImages.length; // Loop back to the first image and color
+    }
+
+    // Ensure the first transition happens smoothly on page load
+    window.onload = function () {
+        changeProductBackground();
+        setInterval(changeProductBackground, 7000); // Change every 4 seconds
+    };
+</script>
+</body>
+</html>
+
+</body>
+</html>

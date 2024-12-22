@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Freshvet - Your Trusted Partner in Sustainable Farming.">
+    <meta name="author" content="Freshvet">
+    <title>About Us - Freshvet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <!-- Logo on the Left -->
+            <div class="logo-left">
+                <a href="index.html">
+                    <img src="images/Freshvet Logo.jpg" alt="Freshvet Logo" class="logo">
+                </a>
+            </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="article-body">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/four.jpeg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            border-radius: 20px;
+            color: #fff; /* Change text color to white for contrast */
+        }
+
+        header, main, section {
+            border-radius: 20px; /* Rounded corners for sections */
+        }
+
+     /* General Styling for the Article */
+.article-body {
+    font-family: 'Arial', sans-serif;
+    color: #333333; /* Dark grey for body text */
+    line-height: 1.8;
+    padding: 30px;
+    max-width: 850px;
+    margin: 20px auto;
+    background-color: #e7f7ff; /* Soft pastel blue */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Section Styling */
+.article-body section {
+    padding: 25px;
+    margin-bottom: 15px;
+    background-color: #ffffff; /* White background for each section */
+    border-radius: 12px; /* Rounded corners for sections */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Soft shadow for sections */
+    transition: background-color 0.3s, border-left 0.3s;
+}
+
+.article-body section:hover {
+    background-color: #f5f5f5; /* Light grey on hover */
+    border-left: 6px solid #ff5722; /* Coral red border on hover */
+}
+
+/* Header Styling */
+.article-body h2 {
+    font-size: 1.8em;
+    color: #1976d2; /* Blue for headings */
+    margin-bottom: 20px;
+    text-align: center;
+    word-spacing: 0.05em; /* Consistent word spacing */
+}
+
+.article-body h3 {
+    font-size: 1.5em;
+    color: #9B59B6; /* Muted dark grey for subheadings */
+    margin-bottom: 15px;
+    word-spacing: 0.05em;
+}
+
+.article-body h4 {
+    font-size: 1.3em;
+    color: #388e3c; /* Deep green for smaller headings */
+    margin-bottom: 10px;
+    word-spacing: 0.05em;
+}
+
+/* Paragraph Styling */
+.article-body p {
+    font-size: 1.15em;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.75;
+    color: #555;
+    word-spacing: 0.05em;
+}
+
+/* List Styling */
+.article-body ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-bottom: 0px;
+}
+
+.article-body ul li {
+    font-size: 1.15em;
+    margin-bottom: 10px;
+    color: #616161;
+    word-spacing: 0.05em;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Links Styling */
+.article-body a {
+    color: #0288d1; /* Blue for links */
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.article-body a:hover {
+    color: #1976d2; /* Slightly darker blue for hover */
+    text-decoration: underline;
+}
+
+/* Section-specific Colors */
+#emerging-technologies-precision-agriculture {
+    background-color: #e3f2fd;
+    border-left: 6px solid #0288d1;
+}
+
+#drones-in-precision-agriculture {
+    background-color: #ffe0b2;
+    border-left: 6px solid #ff5722;
+}
+
+#iot-sensors {
+    background-color: #f1f8e9;
+    border-left: 6px solid #388e3c;
+}
+
+#data-analytics-ai {
+    background-color: #fff3e0;
+    border-left: 6px solid #d32f2f;
+}
+
+#autonomous-tractors {
+    background-color: #fbe9e7;
+    border-left: 6px solid #f57c00;
+}
+
+#satellite-technology {
+    background-color: #e8f5e9;
+    border-left: 6px solid #388e3c;
+}
+
+#robotics-for-agrochemical-application {
+    background-color: #f5f5f5;
+    border-left: 6px solid #0288d1;
+}
+
+#conclusion {
+    background-color: #ffe0b2;
+    border-left: 6px solid #ff5722;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article-body {
+        padding: 20px;
+    }
+
+    .article-body h2 {
+        font-size: 1.5em;
+    }
+
+    .article-body h3 {
+        font-size: 1.4em;
+    }
+
+    .article-body h4 {
+        font-size: 1.3em;
+    }
+
+    .article-body p {
+        font-size: 1em;
+    }
+
+    .article-body ul li {
+        font-size: 1em;
+    }
+
+    /* Ensure consistent word spacing */
+    .article-body h2, .article-body h3, .article-body h4,
+    .article-body p, .article-body ul li {
+        word-spacing: 0.05em;
+    }
+}
+
+    </style>
+    <section id="role-of-soil-ph">
+    <h2>The Relationship Between Soil pH and Fertilizer Effectiveness</h2>
+    <p>Soil pH is one of the most important factors influencing the availability of nutrients to plants. It determines how well plants can access the essential minerals and nutrients they need for growth. Understanding the relationship between soil pH and fertilizer effectiveness can help gardeners and farmers optimize their fertilizer use, reduce waste, and improve plant health.</p>
+</section>
+
+<section id="what-is-soil-ph">
+    <h2>What is Soil pH?</h2>
+    <p>Soil pH is a measure of how acidic or alkaline the soil is. It ranges from 0 to 14 on the pH scale, where:</p>
+    <ul>
+        <li>pH 7 is neutral</li>
+        <li>pH below 7 is acidic</li>
+        <li>pH above 7 is alkaline</li>
+    </ul>
+    <p>Most plants grow best in soils with a pH between 6.0 and 7.5, though some plants have specific pH requirements.</p>
+</section>
+
+<section id="how-soil-ph-affects-nutrient-availability">
+    <h2>How Soil pH Affects Nutrient Availability</h2>
+    <p>Soil pH directly influences the solubility of nutrients in the soil. Here’s how:</p>
+    <h3>Acidic Soils (pH below 6.0)</h3>
+    <ul>
+        <li><strong>Nutrient lockout:</strong> Some nutrients, such as phosphorus, calcium, and magnesium, become less available in acidic soils.</li>
+        <li><strong>Toxicity risk:</strong> In acidic conditions, certain elements like aluminum and manganese become more soluble and can become toxic to plants.</li>
+    </ul>
+    <h3>Alkaline Soils (pH above 7.5)</h3>
+    <ul>
+        <li><strong>Micronutrient deficiency:</strong> In alkaline soils, nutrients like iron, manganese, zinc, and copper become less available, potentially causing deficiencies.</li>
+        <li><strong>Calcium and magnesium imbalance:</strong> These nutrients can become excessively abundant in alkaline soils, leading to an imbalance that could harm plants.</li>
+    </ul>
+</section>
+
+<section id="impact-of-soil-ph-on-fertilizer-effectiveness">
+    <h2>The Impact of Soil pH on Fertilizer Effectiveness</h2>
+    <p>Fertilizers provide essential nutrients, but their effectiveness can vary depending on soil pH:</p>
+    <h3>Acidic Soils (pH below 6.0)</h3>
+    <ul>
+        <li><strong>Ammonium-based fertilizers:</strong> These are effective in acidic soils as they help lower pH slightly and supply nitrogen in a form that plants can absorb easily.</li>
+        <li><strong>Iron and manganese supplements:</strong> These are often needed in acidic soils to address deficiencies in micronutrients.</li>
+        <li><strong>Phosphorus fertilizers:</strong> In highly acidic soils, phosphorus may bind with iron and aluminum, making it less available to plants. Lime applications can help mitigate this.</li>
+    </ul>
+    <h3>Alkaline Soils (pH above 7.5)</h3>
+    <ul>
+        <li><strong>Urea fertilizers:</strong> These can be effective as they help acidify the soil, making nutrients like iron and phosphorus more available.</li>
+        <li><strong>Acidifying fertilizers:</strong> These fertilizers lower soil pH, which can help release essential micronutrients that are locked in alkaline conditions.</li>
+        <li><strong>Phosphorus and potassium:</strong> Fertilizers containing these nutrients may become less effective in alkaline soils, requiring regular adjustments to pH for optimal nutrient uptake.</li>
+    </ul>
+</section>
+
+<section id="how-to-test-soil-ph">
+    <h2>How to Test Soil pH</h2>
+    <p>Testing soil pH is a straightforward process that helps determine the appropriate steps to adjust pH for better fertilizer effectiveness. Here’s how you can do it:</p>
+    <h3>Soil pH Test Kits</h3>
+    <ul>
+        <li>These are available at garden centers and online. Simply collect a soil sample, mix it with a testing solution, and compare the color to a pH scale.</li>
+    </ul>
+    <h3>Soil pH Meters</h3>
+    <ul>
+        <li>These provide instant readings and are convenient for ongoing monitoring.</li>
+    </ul>
+    <h3>Professional Soil Testing</h3>
+    <ul>
+        <li>For more detailed analysis, consider sending a soil sample to a local agricultural extension office or testing laboratory.</li>
+    </ul>
+</section>
+
+<section id="how-to-adjust-soil-ph">
+    <h2>How to Adjust Soil pH</h2>
+    <p>Once you’ve tested your soil, you can adjust its pH based on the results. Here are common methods for modifying soil pH:</p>
+    <h3>To Lower pH (Acidify the Soil)</h3>
+    <ul>
+        <li><strong>Elemental sulfur:</strong> This is a common and effective way to lower pH over time.</li>
+        <li><strong>Peat moss:</strong> It is naturally acidic and can help reduce pH in small areas.</li>
+        <li><strong>Aluminum sulfate:</strong> Works quickly to lower pH but should be used cautiously to avoid toxicity in sensitive plants.</li>
+        <li><strong>Iron sulfate:</strong> A good option for lowering pH in gardens with iron deficiency.</li>
+    </ul>
+    <h3>To Raise pH (Increase Alkalinity)</h3>
+    <ul>
+        <li><strong>Lime (Calcium carbonate):</strong> The most common way to raise pH, it slowly neutralizes soil acidity over time.</li>
+        <li><strong>Dolomitic lime:</strong> This form of lime also adds magnesium to the soil.</li>
+        <li><strong>Wood ashes:</strong> Contain potassium and can help raise pH, but should be used sparingly.</li>
+        <li><strong>Ground oyster shells:</strong> A natural method to increase pH, especially beneficial in acidic soils lacking calcium.</li>
+    </ul>
+</section>
+
+<section id="fertilizer-application-tips">
+    <h2>Fertilizer Application Tips Based on pH</h2>
+    <p>To maximize the effectiveness of your fertilizer applications:</p>
+    <h3>Follow the Manufacturer’s Instructions</h3>
+    <ul>
+        <li>Fertilizer formulations are often designed for specific pH ranges. Stick to the recommended dosage for best results.</li>
+    </ul>
+    <h3>Use Slow-Release Fertilizers</h3>
+    <ul>
+        <li>These provide nutrients over an extended period, reducing the risk of nutrient runoff and minimizing the need for frequent applications.</li>
+    </ul>
+    <h3>Incorporate Organic Matter</h3>
+    <ul>
+        <li>Organic materials, like compost, can help buffer soil pH and improve nutrient availability.</li>
+    </ul>
+    <h3>Apply Fertilizers When Needed</h3>
+    <ul>
+        <li>Over-fertilizing can lead to nutrient imbalances, especially in soils that are too acidic or alkaline. Regular soil testing will help determine the optimal fertilizer schedule.</li>
+    </ul>
+</section>
+
+<section id="common-soil-ph-preferences-of-plants">
+    <h2>Common Soil pH Preferences of Popular Plants</h2>
+    <p>Different plants have different pH preferences. Here’s a quick guide to the ideal pH range for some common plants:</p>
+    <h3>Acid-loving Plants (pH 4.5–6.0)</h3>
+    <ul>
+        <li>Blueberries</li>
+        <li>Azaleas</li>
+        <li>Rhododendrons</li>
+        <li>Camellias</li>
+        <li>Hydrangeas (blue variety)</li>
+    </ul>
+    <h3>Neutral Soil-loving Plants (pH 6.0–7.0)</h3>
+    <ul>
+        <li>Tomatoes</li>
+        <li>Carrots</li>
+        <li>Lettuce</li>
+        <li>Peas</li>
+        <li>Roses</li>
+    </ul>
+    <h3>Alkaline Soil-loving Plants (pH 7.5–8.5)</h3>
+    <ul>
+        <li>Lavender</li>
+        <li>Lilacs</li>
+        <li>Cabbage</li>
+        <li>Beets</li>
+        <li>Spinach</li>
+    </ul>
+</section>
+
+<section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>Soil pH plays a critical role in determining how effectively fertilizers work and whether plants can access the nutrients they need. By understanding the relationship between pH and nutrient availability, and by testing and adjusting your soil’s pH, you can optimize fertilizer use, prevent nutrient deficiencies or toxicities, and ensure healthy plant growth. Regular soil testing and pH management are key steps in achieving a thriving garden or productive farm.</p>
+</section>
+
+
+
+<script>
+    // Array of image paths for the products section (used as background images)
+    const productImages = [
+        'images/ham.jpg',
+        'images/35.jpeg',
+        'images/34.jpeg',
+        'images/33.jpeg',
+        'images/32.jpeg' // First image
+    ];
+
+    let productIndex = 0; // Start with the first image
+    let articleBody = document.querySelector('.article-body'); // Article body element
+
+    // Function to preload the next image
+    function preloadImage(src) {
+        const img = new Image();
+        img.src = src;
+    }
+
+    // Function to update the background image of the article body
+    function changeArticleBackground() {
+        // Preload the next image in the sequence to ensure smooth transition
+        preloadImage(productImages[(productIndex + 1) % productImages.length]);
+
+        // Change the background image with a smooth transition
+        articleBody.style.transition = 'background-image 1.5s ease-in-out'; // Ensuring the smooth transition
+        articleBody.style.backgroundImage = `url('${productImages[productIndex]}')`;
+
+        // Update the index to the next image in the array
+        productIndex = (productIndex + 1) % productImages.length; // Loop back to the first image
+    }
+
+    // Ensure the first transition happens smoothly on page load
+    window.onload = function() {
+        changeArticleBackground();
+        setInterval(changeArticleBackground, 4000); // Change background every 4 seconds
+    };
+</script>
+
+</body>
+</html>

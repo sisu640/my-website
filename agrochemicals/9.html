@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Freshvet - Your Trusted Partner in Sustainable Farming.">
+    <meta name="author" content="Freshvet">
+    <title>About Us - Freshvet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <!-- Logo on the Left -->
+            <div class="logo-left">
+                <a href="index.html">
+                    <img src="images/Freshvet Logo.jpg" alt="Freshvet Logo" class="logo">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Article Section -->
+    <div class="article-body">
+        <style>
+            body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/four.jpeg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            border-radius: 20px;
+            color: #fff; /* Change text color to white for contrast */
+        }
+
+        header, main, section {
+            border-radius: 20px; /* Rounded corners for sections */
+        }
+
+            /* General Styling for the Article */
+.article-body {
+    font-family: 'Arial', sans-serif;
+    color: #333333; /* Dark grey for body text */
+    line-height: 1.8;
+    padding: 30px;
+    max-width: 850px;
+    margin: 20px auto;
+    background-color: #f0f9ff; /* Light Blue background */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Section Styling */
+.article-body section {
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: #ffffff; /* White background for each section */
+    border-radius: 12px; /* Rounded corners for sections */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Soft shadow for sections */
+    transition: background-color 0.3s, border-left 0.3s;
+}
+
+.article-body section:hover {
+    background-color: #f0f0f0;
+    border-left: 6px solid #0288d1; /* Highlight border on hover */
+}
+
+/* Header Styling */
+.article-body h2 {
+    font-size: 2em;
+    color: #3b8cbb; /* Blue for headings */
+    margin-bottom: 20px;
+    text-align: center;
+    word-spacing: 0.05em; /* Consistent word spacing */
+}
+
+.article-body h3 {
+    font-size: 1.8em;
+    color: #d55f02; /* Amber orange for subheadings */
+    margin-bottom: 15px;
+    word-spacing: 0.05em;
+}
+
+/* Paragraph Styling */
+.article-body p {
+    font-size: 1.15em;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.75;
+    color: #555;
+    word-spacing: 0.05em;
+}
+
+/* List Styling with Section Colors */
+.article-body ul {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.article-body ul li {
+    font-size: 1.15em;
+    margin-bottom: 12px;
+    word-spacing: 0.05em;
+}
+
+/* Section-specific List Colors */
+#introduction ul li {
+    color: #0288d1; /* Blue for Introduction section */
+}
+
+#why-soil-ph-matters ul li {
+    color: #fbc02d; /* Yellow for Why Soil pH Matters section */
+}
+
+#testing-soil-ph ul li {
+    color: #43a047; /* Green for Testing Soil pH section */
+}
+
+#adjusting-soil-ph ul li {
+    color: #fb8c00; /* Orange for Adjusting Soil pH section */
+}
+
+#fertilizer-compatibility ul li {
+    color: #5e35b1; /* Purple for Fertilizer Compatibility section */
+}
+
+#maintenance-tips ul li {
+    color: #ab47bc; /* Light Purple for Maintenance Tips section */
+}
+
+#conclusion ul li {
+    color: #0288d1; /* Blue for Conclusion section */
+}
+
+/* Links Styling */
+.article-body a {
+    color: #3b8cbb;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.article-body a:hover {
+    color: #1f6c87;
+    text-decoration: underline;
+}
+
+/* Section-specific Colors */
+#introduction {
+    background-color: #e3f2fd;
+    border-left: 6px solid #0288d1;
+}
+
+#why-soil-ph-matters {
+    background-color: #fffde7;
+    border-left: 6px solid #fbc02d;
+}
+
+#testing-soil-ph {
+    background-color: #e8f5e9;
+    border-left: 6px solid #43a047;
+}
+
+#adjusting-soil-ph {
+    background-color: #fff3e0;
+    border-left: 6px solid #fb8c00;
+}
+
+#fertilizer-compatibility {
+    background-color: #ede7f6;
+    border-left: 6px solid #5e35b1;
+}
+
+#maintenance-tips {
+    background-color: #f3e5f5;
+    border-left: 6px solid #ab47bc;
+}
+
+#conclusion {
+    background-color: #f5f5f5;
+    border-left: 6px solid #0288d1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article-body {
+        padding: 20px;
+    }
+
+    .article-body h2 {
+        font-size: 1.5em;
+    }
+
+    .article-body h3 {
+        font-size: 1.4em;
+    }
+
+    .article-body p {
+        font-size: 1em;
+    }
+
+    .article-body ul li {
+        font-size: 1em;
+    }
+
+    /* Ensure consistent word spacing */
+    .article-body h2, .article-body h3, .article-body p, .article-body ul li {
+        word-spacing: 0.05em;
+    }
+}
+
+
+
+        </style>
+
+        <!-- Main Content of the Article -->
+       <section id="introduction">
+    <h2>The Relationship Between Soil pH and Fertilizer Effectiveness</h2>
+    <p>Soil pH is a critical factor in gardening and agriculture, influencing nutrient availability and the effectiveness of fertilizers. Understanding the relationship between soil pH and fertilizers helps optimize plant growth, boost yields, and minimize waste. This article explores the significance of soil pH, testing methods, adjustments, and fertilizer compatibility for enhanced agricultural outcomes.</p>
+</section>
+
+<section id="why-soil-ph-matters">
+    <h2>Why Soil pH Matters</h2>
+    <p>Soil pH determines the availability of essential nutrients and directly affects plant health. Different pH levels influence the solubility of nutrients:</p>
+    <h3>Acidic Soils (pH < 7)</h3>
+    <p>Nutrients like iron, manganese, and phosphorus are more available, but deficiencies in calcium and magnesium may occur.</p>
+    <h3>Alkaline Soils (pH > 7)</h3>
+    <p>Essential nutrients like phosphorus, iron, and zinc become less available, potentially leading to deficiencies.</p>
+</section>
+
+<section id="testing-soil-ph">
+    <h2>Testing Your Soil pH</h2>
+    <p>Regular testing helps identify soil pH levels and guides necessary adjustments. Methods include:</p>
+    <ul>
+        <li><strong>Soil Test Kits:</strong> Convenient and available at garden centers, providing quick results.</li>
+        <li><strong>Digital pH Meters:</strong> Accurate and reusable tools for frequent testing.</li>
+        <li><strong>Lab Testing:</strong> Offers precise analysis and is ideal for professional-grade assessments.</li>
+    </ul>
+</section>
+
+<section id="adjusting-soil-ph">
+    <h2>Adjusting Soil pH</h2>
+    <p>Adjust soil pH to create optimal conditions for plant growth and nutrient uptake.</p>
+    <h3>To Raise pH (For Acidic Soils)</h3>
+    <ul>
+        <li>Apply <strong>lime</strong> (calcium carbonate or dolomitic lime).</li>
+        <li>Use <strong>wood ash</strong> sparingly as an organic alternative.</li>
+        <li>Aerate the soil to improve lime effectiveness.</li>
+    </ul>
+    <h3>To Lower pH (For Alkaline Soils)</h3>
+    <ul>
+        <li>Add <strong>elemental sulfur</strong> or <strong>aluminum sulfate</strong>.</li>
+        <li>Incorporate organic matter like <strong>compost</strong> or <strong>peat moss</strong>.</li>
+        <li>Use acid-forming fertilizers such as <strong>ammonium sulfate</strong>.</li>
+    </ul>
+</section>
+
+<section id="fertilizer-compatibility">
+    <h2>Fertilizer Compatibility with pH Levels</h2>
+    <p>Different fertilizers perform optimally within specific pH ranges:</p>
+    <ul>
+        <li><strong>Nitrogen Fertilizers:</strong> Urea and ammonium nitrate are suitable for slightly acidic to neutral soils.</li>
+        <li><strong>Phosphorus Fertilizers:</strong> Superphosphate works best in slightly acidic conditions.</li>
+        <li><strong>Potassium Fertilizers:</strong> Effective across a wide pH range but absorbed better in neutral soils.</li>
+    </ul>
+</section>
+
+<section id="maintenance-tips">
+    <h2>Tips for Ongoing Maintenance</h2>
+    <p>Maintaining optimal soil pH ensures consistent plant health and fertilizer efficiency:</p>
+    <ul>
+        <li><strong>Regular Testing:</strong> Conduct annual tests to monitor changes in soil pH.</li>
+        <li><strong>Buffering Agents:</strong> Add organic matter like compost to stabilize pH over time.</li>
+        <li><strong>Gradual Adjustments:</strong> Alter pH gradually and observe plant responses.</li>
+    </ul>
+</section>
+
+<section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>Maintaining the right soil pH enhances fertilizer effectiveness, promoting healthier plants and higher yields. By testing soil regularly, adjusting pH appropriately, and selecting compatible fertilizers, you can achieve sustainable and productive agricultural practices. Understanding and managing soil pH is key to fostering long-term plant success and environmental health.</p>
+</section>
+
+<script>
+    // Array of image paths for the products section (used as background images)
+    const productImages = [
+        'images/ham.jpg',
+        'images/35.jpeg',
+        'images/34.jpeg',
+        'images/33.jpeg',
+        'images/32.jpeg' // First image
+    ];
+
+    let productIndex = 0; // Start with the first image
+    let articleBody = document.querySelector('.article-body'); // Article body element
+
+    // Function to preload the next image
+    function preloadImage(src) {
+        const img = new Image();
+        img.src = src;
+    }
+
+    // Function to update the background image of the article body
+    function changeArticleBackground() {
+        // Preload the next image in the sequence to ensure smooth transition
+        preloadImage(productImages[(productIndex + 1) % productImages.length]);
+
+        // Change the background image with a smooth transition
+        articleBody.style.transition = 'background-image 1.5s ease-in-out'; // Ensuring the smooth transition
+        articleBody.style.backgroundImage = `url('${productImages[productIndex]}')`;
+
+        // Update the index to the next image in the array
+        productIndex = (productIndex + 1) % productImages.length; // Loop back to the first image
+    }
+
+    // Ensure the first transition happens smoothly on page load
+    window.onload = function() {
+        changeArticleBackground();
+        setInterval(changeArticleBackground, 4000); // Change background every 4 seconds
+    };
+</script>
+
+</body>
+</html>

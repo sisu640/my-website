@@ -1,0 +1,721 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Root variables for color themes */
+:root {
+    --primary-green: #28a745;
+    --hover-green: #218838;
+    --active-green: #1e7e34;
+    --dark-grey: #343a40;
+    --highlight-color: #ffc107;
+    --grey: #6c757d;
+    --cyan: #17a2b8;
+    --purple: #6610f2;
+    --orange: #fd7e14;
+    --coral: #ff6f61; /* Coral for Herbicides */
+    --light-beige: #f5f5dc; /* Beige for Soil Conditioners */
+    --soft-blue: #add8e6; /* Soft Blue for Foliar */
+    --soft-purple: #b19cd9; /* Soft Purple for Fungicides */
+    --cream-white: #f5f5f5; /* Cream White for Neutral Backgrounds */
+    --soft-orange: #ff9f68; /* Soft Orange for Insecticides */
+    --bright-white: #ffffff; /* Bright White for Text */
+    --cool-gray: #dfe6e9; /* Cool Gray for Background Highlights */
+    --sunlit-yellow: #f9e79f; /* Sunlit Yellow for Accents */
+    --soft-peach: #fad7a0; /* Soft Peach for Mild Highlights */
+    --sky-blue: #a9d9ff; /* Sky Blue for Fresh Elements */
+    --frosted-mint: #e3f9e5; /* Frosted Mint for Eco Highlights */
+    --pale-lavender: #e4defd; /* Pale Lavender for Calm Tones */
+    --blush-pink: #ffe4e6; /* Blush Pink for Subtle Notes */
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    position: fixed; /* Makes the header stay at the top */
+    top: 0; /* Aligns the header to the top */
+    left: 0; /* Ensures the header aligns with the viewport's left edge */
+    width: 100%; /* Stretches the header across the viewport */
+    background-color: white; /* Matches the background of the header */
+    z-index: 1000; /* Keeps the header above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    border-bottom: 1px solid #ccc; /* Optional: Adds a divider below the header */
+}
+
+/* Remove the dark background from the navigation */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;  /* Change background to transparent */
+}
+
+/* Remove any box shadow or borders around nav items */
+header nav ul li {
+    margin-right: 20px;
+    border: none; /* Remove any border */
+    box-shadow: none; /* Remove box shadow */
+}
+
+
+header nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Matches the text color */
+    font-size: 1em; /* Adjusts font size */
+}
+
+body {
+    padding-top: 60px; /* Adjust the top padding to prevent content from being hidden under the fixed header */
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* News Section */
+#news {
+    padding: 40px 20px;
+    background-color: white;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#news h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 30px;
+}
+
+/* News Article Styling */
+.news-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 800px; /* Limit article width */
+    margin: 20px auto; /* Center the articles horizontally */
+    text-align: left; /* Align text for better readability */
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.news-item img {
+    display: block; /* Make image a block element */
+    margin: 0 auto 15px; /* Center image and add space below */
+    width: 100%; /* Adjust width for responsiveness */
+    max-width: 600px; /* Set maximum width for large screens */
+    border-radius: 8px; /* Add rounded corners for a polished look */
+}
+
+/* Article Headings */
+.news-item h3 {
+    font-size: 2rem;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+/* Article Text */
+.news-item p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Read More Link */
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+    color: #005f1e; /* Darker green on hover */
+}
+
+.read-more i {
+    margin-left: 5px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+/* Filter by Category Section */
+#product-filter {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--soft-blue); /* Soft Blue Background for filter section */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown (select) styling */
+#product-category {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var(--primary-green);  /* Green Background for the dropdown */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the dropdown */
+#product-category:hover {
+    background-color: var(--hover-green); /* Darker Green on hover */
+}
+
+/* Focus state for accessibility (when the dropdown is focused) */
+#product-category:focus {
+    outline: none;
+    border: 2px solid var(--highlight-color); /* Highlighted border when focused */
+}
+
+/* Style for individual options inside the dropdown */
+#product-category option {
+    background-color: var(--primary-green); /* Same green background for options */
+    color: white;
+    padding: 10px;
+}
+
+/* Hover effect for individual options */
+#product-category option:hover {
+    background-color: var(--hover-green); /* Darker green for options when hovered */
+}
+
+
+/* Product container grid */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-box {
+    width: 250px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-box a {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-box a:hover {
+    background-color: var(--hover-green);
+    transform: translateY(-3px);
+}
+
+.product-box a:active {
+    background-color: var(--active-green);
+    transform: translateY(1px);
+}
+
+.product-description {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Specific background colors for each product box */
+#fertilizers-box {
+    background-color: #b2e2a4;
+}
+
+#herbicides-box {
+    background-color: var(--coral);
+}
+
+#soil-conditioners-box {
+    background-color: var(--light-beige);
+}
+
+#foliar-box {
+    background-color: var(--soft-blue);
+}
+
+#fungicides-box {
+    background-color: var(--soft-purple);
+}
+
+#insecticides-box {
+    background-color: var(--soft-orange);
+}
+
+#sticker-box {
+    background-color: var(--cream-white);
+}
+
+/* Image styling */
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+
+//* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f0f0f5;
+    line-height: 1.6;
+}
+
+/* About Us Page Styling */
+#about-us {
+    background: linear-gradient(135deg, var(--primary-green), var(--highlight-color)); /* Gradient background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#about-us h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#about-us p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+#about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about-us ul li {
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* About Us Section Hover Effect */
+#about-us:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Define Color Variables for the new vibrant scheme */
+:root {
+    --primary-blue: #007BFF; /* Bright, clean blue */
+    --secondary-green: #28A745; /* Fresh green */
+    --accent-orange: #FF5733; /* Vibrant coral orange */
+    --light-background: #F5F5F5; /* Light gray for footer and page background */
+    --text-color: #FFFFFF; /* White text */
+    --highlight-color: #FFD700; /* Bright gold for link hover */
+}
+
+/* Contact Us Page Styling */
+#contact-info {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green)); /* Gradient from blue to green */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    color: var(--text-color);
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#contact-info h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for readability */
+}
+
+#contact-info p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Hover Effect for Contact Info */
+#contact-info:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Contact Info Links Styling */
+#contact-info a {
+    color: var(--accent-orange);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact-info a:hover {
+    color: var(--highlight-color); /* Gold color on hover */
+    text-decoration: underline;
+}
+
+/* Google Map Embed */
+iframe {
+    border: 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out; /* Smooth transition for map hover effect */
+}
+
+/* Google Map Hover Effect */
+iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow effect on hover */
+}
+
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* News Section */
+#news {
+    padding: 40px 20px;
+    background-color: white;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#news h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 30px;
+}
+
+/* News Article Styling */
+.news-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 800px; /* Limit article width */
+    margin: 20px auto; /* Center the articles horizontally */
+    text-align: left; /* Align text for better readability */
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.news-item img {
+    display: block; /* Make image a block element */
+    margin: 0 auto 15px; /* Center image and add space below */
+    width: 100%; /* Adjust width for responsiveness */
+    max-width: 600px; /* Set maximum width for large screens */
+    border-radius: 8px; /* Add rounded corners for a polished look */
+}
+
+/* Article Headings */
+.news-item h3 {
+    font-size: 2rem;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+/* Article Text */
+.news-item p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Read More Link */
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+    color: #005f1e; /* Darker green on hover */
+}
+
+.read-more i {
+    margin-left: 5px;
+}
+
+/* General Header Styles */
+header {
+    background-color: var(--primary-green); /* Fresh Green color */
+    color: white;
+    padding: 5px 15px; /* Further reduced padding */
+    text-align: center;
+    position: relative; /* Ensure header scrolls with content */
+    z-index: 9999;
+}
+
+header h1 {
+    font-size: 1.6rem; /* Even smaller font size for the header */
+    margin-top: 5px; /* Reduced margin */
+}
+
+/* Logo size adjustments */
+header img {
+    max-width: 100px; /* Further reduce logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation Styles */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* No background shade */
+}
+
+header nav ul li {
+    margin-right: 5px; /* Even further reduced spacing between nav items */
+}
+
+header nav ul li:last-child {
+    margin-right: 0; /* Ensure no extra margin on the last item */
+}
+
+/* Navigation Links */
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem; /* Reduced font size for an even tighter look */
+    padding: 3px 6px; /* Reduced padding for a more compact layout */
+}
+
+header nav ul li a:hover {
+    background-color: var(--hover-green);
+    border-radius: 4px;
+}
+
+/* Section Styles */
+.home, .about, .contact {
+    margin-bottom: 15px; /* Reduced margin */
+    padding: 15px; /* Reduced padding */
+    background: linear-gradient(135deg, #a0522d, #8b4513); /* Brown gradient */
+    border-radius: 8px; /* Slightly rounded corners for a modern feel */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.home h2, .about h2, .contact h2 {
+    font-size: 1.4rem; /* Slightly smaller heading sizes */
+}
+
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: row; /* Keep navigation horizontal */
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin-right: 8px; /* Further reduce spacing for mobile */
+    }
+
+   /* Navigation Links */
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 6px 10px; /* Reduced padding for navigation tabs */
+    display: inline-block; /* Ensure clickable area */
+    transition: background-color 0.3s ease;
+}
+
+
+    header nav ul li a {
+        padding: 5px 8px; /* Even smaller padding for tighter layout */
+    }
+
+    body {
+        padding-top: 0; /* Remove any additional padding */
+    }
+
+    #nav-links.active {
+        display: flex; /* Same as default behavior */
+    }
+}
+/* General Page Styling */
+#fungicides, #insecticides, #stickers, #fertilizers, #foliar, #soil-conditioners, #herbicides {
+    text-align: center;
+    padding: 40px 10px;
+    background-color: #f5f5f5;  /* Light gray background for the whole page */
+}
+
+/* Centered h2 Heading Styling */
+h2 {
+    font-size: 28px;
+    color: #2980b9;  /* Bright blue for the h2 heading to make it stand out */
+    margin-bottom: 20px;
+}
+
+/* Description below the h2 Heading */
+h2 + p {
+    font-size: 18px;
+    color: #7f8c8d;  /* Soft gray for the description to complement the heading */
+    margin-bottom: 40px;  /* Adds space after the description */
+}
+
+/* Product Box Styling */
+.product-box {
+    display: inline-block;
+    width: 280px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;  /* Clean white background for the product box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image Styling */
+.product-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #e7e7e7;  /* Light border around images */
+}
+
+/* Product Title Styling */
+.product-box h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #34495e;  /* Dark blue-gray color for titles */
+}
+
+/* Product Description Styling */
+.product-description {
+    font-size: 16px;
+    color: #333333;  /* Soft black for descriptions */
+    margin-top: 10px;
+}
+
+/* List of Benefits Styling */
+
+
+/* Buy Button Styling */
+.buy-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #2980b9;  /* Bright blue for the button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #3498db;  /* Slightly lighter blue on hover */
+}
+
+@media (max-width: 768px) {
+    #products {
+        background-image: url('images/small-one.jpg');
+    }
+}
+
+
